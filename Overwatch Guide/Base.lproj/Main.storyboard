@@ -27,15 +27,15 @@
             <objects>
                 <tableViewController id="ZD7-UJ-TnR" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="288" sectionHeaderHeight="28" sectionFooterHeight="28" id="Aen-uS-c8U">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="288" id="Ddh-nb-FF9">
-                                <rect key="frame" x="0.0" y="28" width="600" height="288"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="258" id="Ddh-nb-FF9" userLabel="Banner Cell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="258"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ddh-nb-FF9" id="WWs-Kj-bMF">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="287"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="257"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info-temp-background" translatesAutoresizingMaskIntoConstraints="NO" id="9J1-NU-IKz">
@@ -62,12 +62,58 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="288" id="nrM-fA-Uhf" userLabel="Counters Cell">
+                                <rect key="frame" x="0.0" y="286" width="600" height="288"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nrM-fA-Uhf" id="IT2-9e-aZU">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="287"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJG-h1-3Fd">
+                                            <rect key="frame" x="107" y="24" width="81" height="81"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NnB-y1-cl8">
+                                            <rect key="frame" x="107" y="146" width="81" height="81"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-hV-Q4C">
+                                            <rect key="frame" x="413" y="24" width="81" height="81"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwJ-Wu-GPf">
+                                            <rect key="frame" x="413" y="146" width="81" height="81"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="513" id="Zxv-JM-HSS" userLabel="Counters Cell">
+                                <rect key="frame" x="0.0" y="574" width="600" height="513"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zxv-JM-HSS" id="VI2-Xq-etg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="512"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01M-ye-kxb">
+                                            <rect key="frame" x="107" y="24" width="81" height="81"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dtr-Jw-9wb">
+                                            <rect key="frame" x="107" y="146" width="81" height="81"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SVk-oz-L3q">
+                                            <rect key="frame" x="413" y="24" width="81" height="81"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D6U-hL-CTE">
+                                            <rect key="frame" x="413" y="146" width="81" height="81"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="ZD7-UJ-TnR" id="8UF-Eh-Bb8"/>
                             <outlet property="delegate" destination="ZD7-UJ-TnR" id="3Bs-lv-fw7"/>
                         </connections>
                     </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1800"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XfF-49-j4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
