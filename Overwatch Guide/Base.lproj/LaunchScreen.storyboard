@@ -27,17 +27,39 @@
         <scene sceneID="j4z-ag-qOf">
             <objects>
                 <tableViewController id="md0-OS-Iya" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZUb-o3-pi6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="413" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZUb-o3-pi6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KXz-EM-HMr">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="413" id="KXz-EM-HMr" userLabel="Banner Cell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="413"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KXz-EM-HMr" id="15Y-Ci-1JM">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="412"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RwE-RA-SgH">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="200" id="if9-RB-oMY"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rNn-gO-XXo">
+                                            <rect key="frame" x="250" y="150" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="VMs-9P-rZs"/>
+                                                <constraint firstAttribute="width" constant="100" id="Wrd-4u-tRS"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RwE-RA-SgH" firstAttribute="top" secondItem="15Y-Ci-1JM" secondAttribute="top" id="3jp-dL-cdd"/>
+                                        <constraint firstItem="rNn-gO-XXo" firstAttribute="centerX" secondItem="RwE-RA-SgH" secondAttribute="centerX" id="54g-xF-0ym"/>
+                                        <constraint firstItem="RwE-RA-SgH" firstAttribute="leading" secondItem="15Y-Ci-1JM" secondAttribute="leading" id="8vU-s1-Qhy"/>
+                                        <constraint firstItem="rNn-gO-XXo" firstAttribute="top" secondItem="RwE-RA-SgH" secondAttribute="bottom" constant="-50" id="jWx-EO-jnZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="RwE-RA-SgH" secondAttribute="trailing" id="sQs-KU-AnV"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -46,6 +68,8 @@
                             <outlet property="delegate" destination="md0-OS-Iya" id="UrG-pA-cjU"/>
                         </connections>
                     </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1800"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="82W-Rn-Za7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
