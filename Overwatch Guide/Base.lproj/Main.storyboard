@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PZC-mD-L05">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gNE-9X-jMH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -172,6 +172,155 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcm-t7-YhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2211" y="159"/>
+        </scene>
+        <!--Tutorial Page View Controller-->
+        <scene sceneID="7XD-ce-AZx">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="gNE-9X-jMH" customClass="TutorialPageViewController" customModule="Overwatch_Guide" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zkk-MI-atf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3167" y="154"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mga-J6-hhv">
+            <objects>
+                <viewController storyboardIdentifier="TutorialPage1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SFE-eo-LWx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q5a-Zx-7x7"/>
+                        <viewControllerLayoutGuide type="bottom" id="rq6-0m-1ht"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ieh-Gc-rNS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1Y-M8-8cy">
+                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.61176470588235299" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bd5-Yx-3TR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a hero and then do the stuff and then do the thing. If you do the thing, stuff will be good. Filler text!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMe-vK-vaS">
+                                <rect key="frame" x="60" y="433" width="480" height="47"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fwS-qL-N5G">
+                                <rect key="frame" x="127" y="93" width="347" height="196"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZMe-vK-vaS" secondAttribute="trailing" constant="60" id="E4k-PZ-fol"/>
+                            <constraint firstItem="B1Y-M8-8cy" firstAttribute="leading" secondItem="Ieh-Gc-rNS" secondAttribute="leading" id="EGp-6k-0QZ"/>
+                            <constraint firstAttribute="trailing" secondItem="B1Y-M8-8cy" secondAttribute="trailing" id="KX2-R1-zbf"/>
+                            <constraint firstItem="rq6-0m-1ht" firstAttribute="top" secondItem="B1Y-M8-8cy" secondAttribute="bottom" id="P3L-fA-AOW"/>
+                            <constraint firstItem="B1Y-M8-8cy" firstAttribute="top" secondItem="ZMe-vK-vaS" secondAttribute="bottom" constant="60" id="PCe-iS-7nJ"/>
+                            <constraint firstItem="ZMe-vK-vaS" firstAttribute="leading" secondItem="Ieh-Gc-rNS" secondAttribute="leading" constant="60" id="SPa-ta-foH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNG-WZ-D79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4029" y="-515"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TK9-6U-KTK">
+            <objects>
+                <viewController storyboardIdentifier="TutorialPage2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eyc-vk-lic" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bF4-ZM-FzM"/>
+                        <viewControllerLayoutGuide type="bottom" id="L2q-gm-mtr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dVO-NO-yTM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGp-fS-6wN">
+                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.61176470589999998" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="UBG-8Y-oZc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a hero and then do the stuff and then do the thing. If you do the thing, stuff will be good. Filler text!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZv-Hc-L7B">
+                                <rect key="frame" x="60" y="433" width="480" height="47"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VZv-Hc-L7B" firstAttribute="leading" secondItem="dVO-NO-yTM" secondAttribute="leading" constant="60" id="LjO-LQ-bQp"/>
+                            <constraint firstAttribute="trailing" secondItem="VZv-Hc-L7B" secondAttribute="trailing" constant="60" id="aEr-Zf-glP"/>
+                            <constraint firstItem="L2q-gm-mtr" firstAttribute="top" secondItem="MGp-fS-6wN" secondAttribute="bottom" id="g4P-Cm-2DK"/>
+                            <constraint firstAttribute="trailing" secondItem="MGp-fS-6wN" secondAttribute="trailing" id="luC-od-30r"/>
+                            <constraint firstItem="MGp-fS-6wN" firstAttribute="top" secondItem="VZv-Hc-L7B" secondAttribute="bottom" constant="60" id="t8W-mV-jyF"/>
+                            <constraint firstItem="MGp-fS-6wN" firstAttribute="leading" secondItem="dVO-NO-yTM" secondAttribute="leading" id="xuv-1e-LXO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vez-Bf-p7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4029" y="154"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dRb-Ch-9ej">
+            <objects>
+                <viewController storyboardIdentifier="TutorialPage3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qhV-hO-y9y" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lkd-Bd-am2"/>
+                        <viewControllerLayoutGuide type="bottom" id="A6e-cY-cXR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vYT-9x-1cI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4C-Oe-Xys">
+                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.61176470589999998" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dRU-JW-cYp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a hero and then do the stuff and then do the thing. If you do the thing, stuff will be good. Filler text!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY3-Bf-AZr">
+                                <rect key="frame" x="60" y="433" width="480" height="47"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q4C-Oe-Xys" firstAttribute="leading" secondItem="vYT-9x-1cI" secondAttribute="leading" id="2ZN-fZ-Nup"/>
+                            <constraint firstAttribute="trailing" secondItem="q4C-Oe-Xys" secondAttribute="trailing" id="4Dc-3v-5Eu"/>
+                            <constraint firstItem="mY3-Bf-AZr" firstAttribute="leading" secondItem="vYT-9x-1cI" secondAttribute="leading" constant="60" id="JYY-qU-UeI"/>
+                            <constraint firstItem="q4C-Oe-Xys" firstAttribute="top" secondItem="mY3-Bf-AZr" secondAttribute="bottom" constant="60" id="b9b-gC-ddf"/>
+                            <constraint firstAttribute="trailing" secondItem="mY3-Bf-AZr" secondAttribute="trailing" constant="60" id="gjD-ht-xti"/>
+                            <constraint firstItem="A6e-cY-cXR" firstAttribute="top" secondItem="q4C-Oe-Xys" secondAttribute="bottom" id="kdJ-YH-PAi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVf-uf-hdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4029" y="856"/>
         </scene>
     </scenes>
     <resources>

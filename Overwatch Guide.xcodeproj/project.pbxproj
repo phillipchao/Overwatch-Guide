@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01AAC5C91D2D99160007CAA9 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AAC5C81D2D99160007CAA9 /* JSONHelper.swift */; };
+		01AAC5CB1D2DB4650007CAA9 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AAC5CA1D2DB4650007CAA9 /* TutorialPageViewController.swift */; };
 		01FBDB141D2C952200A4E751 /* HeroInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBDB131D2C952200A4E751 /* HeroInfoViewController.swift */; };
 		06B5239C1D2C6F8500C10FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5239B1D2C6F8500C10FB1 /* AppDelegate.swift */; };
 		06B5239E1D2C6F8500C10FB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5239D1D2C6F8500C10FB1 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		01AAC5C81D2D99160007CAA9 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		01AAC5CA1D2DB4650007CAA9 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
 		01FBDB131D2C952200A4E751 /* HeroInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroInfoViewController.swift; sourceTree = "<group>"; };
 		06B523981D2C6F8500C10FB1 /* Overwatch Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Overwatch Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B5239B1D2C6F8500C10FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				01FBDB131D2C952200A4E751 /* HeroInfoViewController.swift */,
+				01AAC5CA1D2DB4650007CAA9 /* TutorialPageViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06B5239E1D2C6F8500C10FB1 /* ViewController.swift in Sources */,
+				01AAC5CB1D2DB4650007CAA9 /* TutorialPageViewController.swift in Sources */,
 				01AAC5C91D2D99160007CAA9 /* JSONHelper.swift in Sources */,
 				06B5239C1D2C6F8500C10FB1 /* AppDelegate.swift in Sources */,
 				01FBDB141D2C952200A4E751 /* HeroInfoViewController.swift in Sources */,
