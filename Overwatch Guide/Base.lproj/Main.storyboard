@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gNE-9X-jMH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SFE-eo-LWx">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -171,20 +171,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcm-t7-YhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2211" y="159"/>
-        </scene>
-        <!--Tutorial Page View Controller-->
-        <scene sceneID="7XD-ce-AZx">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="gNE-9X-jMH" customClass="TutorialPageViewController" customModule="Overwatch_Guide" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zkk-MI-atf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3167" y="154"/>
+            <point key="canvasLocation" x="2857" y="396"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Mga-J6-hhv">
             <objects>
-                <viewController storyboardIdentifier="TutorialPage1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SFE-eo-LWx" sceneMemberID="viewController">
+                <viewController id="SFE-eo-LWx" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q5a-Zx-7x7"/>
                         <viewControllerLayoutGuide type="bottom" id="rq6-0m-1ht"/>
@@ -204,15 +196,22 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="eyc-vk-lic" kind="show" id="xPb-a5-X5g"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a hero and then do the stuff and then do the thing. If you do the thing, stuff will be good. Filler text!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMe-vK-vaS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An immaculate overview of your favorite heroes in one table, sectioned off by their role." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMe-vK-vaS">
                                 <rect key="frame" x="60" y="433" width="480" height="47"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fwS-qL-N5G">
-                                <rect key="frame" x="127" y="93" width="347" height="196"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tut1" translatesAutoresizingMaskIntoConstraints="NO" id="fwS-qL-N5G">
+                                <rect key="frame" x="225" y="145" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="2kc-Y0-OX7"/>
+                                    <constraint firstAttribute="width" constant="150" id="J5a-n6-Mas"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -223,17 +222,19 @@
                             <constraint firstItem="rq6-0m-1ht" firstAttribute="top" secondItem="B1Y-M8-8cy" secondAttribute="bottom" id="P3L-fA-AOW"/>
                             <constraint firstItem="B1Y-M8-8cy" firstAttribute="top" secondItem="ZMe-vK-vaS" secondAttribute="bottom" constant="60" id="PCe-iS-7nJ"/>
                             <constraint firstItem="ZMe-vK-vaS" firstAttribute="leading" secondItem="Ieh-Gc-rNS" secondAttribute="leading" constant="60" id="SPa-ta-foH"/>
+                            <constraint firstItem="fwS-qL-N5G" firstAttribute="centerY" secondItem="Ieh-Gc-rNS" secondAttribute="centerY" constant="-80" id="iUb-S1-Cct"/>
+                            <constraint firstItem="fwS-qL-N5G" firstAttribute="centerX" secondItem="Ieh-Gc-rNS" secondAttribute="centerX" id="lNZ-LP-67P"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNG-WZ-D79" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4029" y="-515"/>
+            <point key="canvasLocation" x="1419" y="-340"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TK9-6U-KTK">
             <objects>
-                <viewController storyboardIdentifier="TutorialPage2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eyc-vk-lic" sceneMemberID="viewController">
+                <viewController id="eyc-vk-lic" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bF4-ZM-FzM"/>
                         <viewControllerLayoutGuide type="bottom" id="L2q-gm-mtr"/>
@@ -253,20 +254,32 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="qhV-hO-y9y" kind="show" id="j9o-10-jTI"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a hero and then do the stuff and then do the thing. If you do the thing, stuff will be good. Filler text!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZv-Hc-L7B">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore the expanded guide and abilities that is provided for each hero." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZv-Hc-L7B">
                                 <rect key="frame" x="60" y="433" width="480" height="47"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tut2" translatesAutoresizingMaskIntoConstraints="NO" id="PJn-lW-Ybo">
+                                <rect key="frame" x="200" y="120" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="vZW-ea-EVH"/>
+                                    <constraint firstAttribute="height" constant="200" id="vb5-Ta-OTm"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VZv-Hc-L7B" firstAttribute="leading" secondItem="dVO-NO-yTM" secondAttribute="leading" constant="60" id="LjO-LQ-bQp"/>
+                            <constraint firstItem="PJn-lW-Ybo" firstAttribute="centerY" secondItem="dVO-NO-yTM" secondAttribute="centerY" constant="-80" id="PCH-hd-0gw"/>
                             <constraint firstAttribute="trailing" secondItem="VZv-Hc-L7B" secondAttribute="trailing" constant="60" id="aEr-Zf-glP"/>
                             <constraint firstItem="L2q-gm-mtr" firstAttribute="top" secondItem="MGp-fS-6wN" secondAttribute="bottom" id="g4P-Cm-2DK"/>
                             <constraint firstAttribute="trailing" secondItem="MGp-fS-6wN" secondAttribute="trailing" id="luC-od-30r"/>
+                            <constraint firstItem="PJn-lW-Ybo" firstAttribute="centerX" secondItem="dVO-NO-yTM" secondAttribute="centerX" id="sO0-ve-x4X"/>
                             <constraint firstItem="MGp-fS-6wN" firstAttribute="top" secondItem="VZv-Hc-L7B" secondAttribute="bottom" constant="60" id="t8W-mV-jyF"/>
                             <constraint firstItem="MGp-fS-6wN" firstAttribute="leading" secondItem="dVO-NO-yTM" secondAttribute="leading" id="xuv-1e-LXO"/>
                         </constraints>
@@ -274,12 +287,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vez-Bf-p7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4029" y="154"/>
+            <point key="canvasLocation" x="1419" y="396"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dRb-Ch-9ej">
             <objects>
-                <viewController storyboardIdentifier="TutorialPage3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qhV-hO-y9y" sceneMemberID="viewController">
+                <viewController id="qhV-hO-y9y" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lkd-Bd-am2"/>
                         <viewControllerLayoutGuide type="bottom" id="A6e-cY-cXR"/>
@@ -296,37 +309,59 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Finish">
+                                <state key="normal" title="Let's Get Started!">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a hero and then do the stuff and then do the thing. If you do the thing, stuff will be good. Filler text!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY3-Bf-AZr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide through the dynamic comparisons of strengths, weaknesses and suggested team pairings." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY3-Bf-AZr">
                                 <rect key="frame" x="60" y="433" width="480" height="47"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tut32" translatesAutoresizingMaskIntoConstraints="NO" id="GEc-do-6b0">
+                                <rect key="frame" x="250" y="80" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5Ca-LE-WYO"/>
+                                    <constraint firstAttribute="width" constant="100" id="amh-Cc-gl6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tut31" translatesAutoresizingMaskIntoConstraints="NO" id="Upr-1c-Frz">
+                                <rect key="frame" x="150" y="150" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="B3V-zz-MkL"/>
+                                    <constraint firstAttribute="width" constant="300" id="elK-x2-jbQ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="q4C-Oe-Xys" firstAttribute="leading" secondItem="vYT-9x-1cI" secondAttribute="leading" id="2ZN-fZ-Nup"/>
                             <constraint firstAttribute="trailing" secondItem="q4C-Oe-Xys" secondAttribute="trailing" id="4Dc-3v-5Eu"/>
+                            <constraint firstItem="GEc-do-6b0" firstAttribute="centerX" secondItem="vYT-9x-1cI" secondAttribute="centerX" id="BdD-T5-lBE"/>
                             <constraint firstItem="mY3-Bf-AZr" firstAttribute="leading" secondItem="vYT-9x-1cI" secondAttribute="leading" constant="60" id="JYY-qU-UeI"/>
+                            <constraint firstItem="GEc-do-6b0" firstAttribute="centerY" secondItem="vYT-9x-1cI" secondAttribute="centerY" constant="-170" id="USW-Wf-w0N"/>
+                            <constraint firstItem="Upr-1c-Frz" firstAttribute="centerX" secondItem="vYT-9x-1cI" secondAttribute="centerX" id="Yje-NE-4mI"/>
                             <constraint firstItem="q4C-Oe-Xys" firstAttribute="top" secondItem="mY3-Bf-AZr" secondAttribute="bottom" constant="60" id="b9b-gC-ddf"/>
                             <constraint firstAttribute="trailing" secondItem="mY3-Bf-AZr" secondAttribute="trailing" constant="60" id="gjD-ht-xti"/>
                             <constraint firstItem="A6e-cY-cXR" firstAttribute="top" secondItem="q4C-Oe-Xys" secondAttribute="bottom" id="kdJ-YH-PAi"/>
+                            <constraint firstItem="Upr-1c-Frz" firstAttribute="centerY" secondItem="vYT-9x-1cI" secondAttribute="centerY" constant="-50" id="sRY-Tr-0Ya"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVf-uf-hdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4029" y="856"/>
+            <point key="canvasLocation" x="1419" y="1098"/>
         </scene>
     </scenes>
     <resources>
         <image name="Reinhardt_icon" width="112" height="100"/>
         <image name="header bg" width="750" height="333"/>
         <image name="skillBackground" width="80" height="80"/>
+        <image name="tut1" width="302" height="302"/>
+        <image name="tut2" width="410" height="410"/>
+        <image name="tut31" width="579" height="399"/>
+        <image name="tut32" width="197" height="197"/>
         <image name="uparrow" width="54" height="30"/>
     </resources>
 </document>
