@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZD7-UJ-TnR">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,30 +23,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Table View Controller-->
+        <!--Hero Info View Controller-->
         <scene sceneID="iqg-UZ-ukD">
             <objects>
-                <tableViewController id="ZD7-UJ-TnR" sceneMemberID="viewController">
+                <tableViewController id="ZD7-UJ-TnR" customClass="HeroInfoViewController" customModule="Overwatch_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="288" sectionHeaderHeight="28" sectionFooterHeight="28" id="Aen-uS-c8U">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="1800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="258" id="Ddh-nb-FF9" userLabel="Banner Cell">
-                                <rect key="frame" x="0.0" y="28" width="600" height="258"/>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BannerCell" rowHeight="318" id="Ddh-nb-FF9" userLabel="Banner Cell" customClass="BannerTableViewCell" customModule="Overwatch_Guide" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="318"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ddh-nb-FF9" id="WWs-Kj-bMF">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="257"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="Ddh-nb-FF9" id="WWs-Kj-bMF">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="317"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info-temp-background" translatesAutoresizingMaskIntoConstraints="NO" id="9J1-NU-IKz">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="200" id="QX7-PD-W3U"/>
+                                                <constraint firstAttribute="height" constant="250" id="QX7-PD-W3U"/>
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info-temp-portrait" translatesAutoresizingMaskIntoConstraints="NO" id="V6z-5x-EQH">
-                                            <rect key="frame" x="250" y="150" width="100" height="100"/>
+                                            <rect key="frame" x="250" y="200" width="100" height="100"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="5C5-yF-pfg"/>
@@ -61,49 +62,145 @@
                                         <constraint firstItem="V6z-5x-EQH" firstAttribute="top" secondItem="9J1-NU-IKz" secondAttribute="bottom" constant="-50" id="fOk-Hc-hQn"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="backgroundImageView" destination="9J1-NU-IKz" id="OmK-oX-SC4"/>
+                                    <outlet property="portraitImageView" destination="V6z-5x-EQH" id="l3D-4I-aDb"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="288" id="nrM-fA-Uhf" userLabel="Counters Cell">
-                                <rect key="frame" x="0.0" y="286" width="600" height="288"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountersCell" rowHeight="434" id="nrM-fA-Uhf" userLabel="Counters Cell" customClass="CountersTableViewCell" customModule="Overwatch_Guide" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="346" width="600" height="434"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nrM-fA-Uhf" id="IT2-9e-aZU">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="287"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="433"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJG-h1-3Fd">
-                                            <rect key="frame" x="107" y="24" width="81" height="81"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info-temp-portrait" translatesAutoresizingMaskIntoConstraints="NO" id="oJG-h1-3Fd">
+                                            <rect key="frame" x="28" y="28" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="1PX-Q2-nO9"/>
+                                                <constraint firstAttribute="height" constant="80" id="PrL-mi-Btw"/>
+                                            </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NnB-y1-cl8">
-                                            <rect key="frame" x="107" y="146" width="81" height="81"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info-temp-portrait" translatesAutoresizingMaskIntoConstraints="NO" id="NnB-y1-cl8">
+                                            <rect key="frame" x="28" y="128" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="Jwt-br-oWq"/>
+                                                <constraint firstAttribute="height" constant="80" id="PsX-qS-s1w"/>
+                                            </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-hV-Q4C">
-                                            <rect key="frame" x="413" y="24" width="81" height="81"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info-temp-portrait" translatesAutoresizingMaskIntoConstraints="NO" id="3Ir-sj-UiX">
+                                            <rect key="frame" x="28" y="228" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="Kk5-vS-jnw"/>
+                                                <constraint firstAttribute="width" constant="80" id="mkD-sE-NvJ"/>
+                                            </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwJ-Wu-GPf">
-                                            <rect key="frame" x="413" y="146" width="81" height="81"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info-temp-portrait" translatesAutoresizingMaskIntoConstraints="NO" id="exr-L2-Ryc">
+                                            <rect key="frame" x="28" y="328" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="Mmr-eF-WhB"/>
+                                                <constraint firstAttribute="height" constant="80" id="nId-IM-WLJ"/>
+                                            </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e85-PF-WOl">
+                                            <rect key="frame" x="128" y="38" width="452" height="61"/>
+                                            <string key="text">Genji's deflect can use its immense DPS against it to quickly destroy it. Thanks to his high mobility, he can also quickly get behind Bastion and destroy it.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxl-qf-uZd">
+                                            <rect key="frame" x="128" y="138" width="452" height="61"/>
+                                            <string key="text">Genji's deflect can use its immense DPS against it to quickly destroy it. Thanks to his high mobility, he can also quickly get behind Bastion and destroy it.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="662-CN-MQQ">
+                                            <rect key="frame" x="128" y="338" width="452" height="61"/>
+                                            <string key="text">Genji's deflect can use its immense DPS against it to quickly destroy it. Thanks to his high mobility, he can also quickly get behind Bastion and destroy it.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs7-T4-5pH">
+                                            <rect key="frame" x="128" y="238" width="452" height="61"/>
+                                            <string key="text">Genji's deflect can use its immense DPS against it to quickly destroy it. Thanks to his high mobility, he can also quickly get behind Bastion and destroy it.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NnB-y1-cl8" firstAttribute="top" secondItem="oJG-h1-3Fd" secondAttribute="bottom" constant="20" id="2An-Mp-TYl"/>
+                                        <constraint firstItem="exr-L2-Ryc" firstAttribute="centerX" secondItem="3Ir-sj-UiX" secondAttribute="centerX" id="7cL-7i-5TA"/>
+                                        <constraint firstItem="kxl-qf-uZd" firstAttribute="leading" secondItem="NnB-y1-cl8" secondAttribute="trailing" constant="20" id="DTw-IT-tax"/>
+                                        <constraint firstItem="exr-L2-Ryc" firstAttribute="top" secondItem="3Ir-sj-UiX" secondAttribute="bottom" constant="20" id="Ez5-vj-a69"/>
+                                        <constraint firstAttribute="trailing" secondItem="662-CN-MQQ" secondAttribute="trailing" constant="20" id="NNU-1w-DMQ"/>
+                                        <constraint firstItem="3Ir-sj-UiX" firstAttribute="top" secondItem="NnB-y1-cl8" secondAttribute="bottom" constant="20" id="PKE-Ys-DiL"/>
+                                        <constraint firstItem="e85-PF-WOl" firstAttribute="centerY" secondItem="oJG-h1-3Fd" secondAttribute="centerY" id="Q0i-5X-H7f"/>
+                                        <constraint firstItem="662-CN-MQQ" firstAttribute="leading" secondItem="exr-L2-Ryc" secondAttribute="trailing" constant="20" id="RIB-k1-PL8"/>
+                                        <constraint firstItem="3Ir-sj-UiX" firstAttribute="centerX" secondItem="NnB-y1-cl8" secondAttribute="centerX" id="Vd5-HM-0h2"/>
+                                        <constraint firstAttribute="trailing" secondItem="e85-PF-WOl" secondAttribute="trailing" constant="20" id="WYC-qy-W2J"/>
+                                        <constraint firstItem="e85-PF-WOl" firstAttribute="leading" secondItem="oJG-h1-3Fd" secondAttribute="trailing" constant="20" id="a85-bV-71Z"/>
+                                        <constraint firstAttribute="trailing" secondItem="hs7-T4-5pH" secondAttribute="trailing" constant="20" id="a8S-PG-tRJ"/>
+                                        <constraint firstItem="NnB-y1-cl8" firstAttribute="centerX" secondItem="oJG-h1-3Fd" secondAttribute="centerX" id="hYn-2b-W9l"/>
+                                        <constraint firstItem="hs7-T4-5pH" firstAttribute="leading" secondItem="3Ir-sj-UiX" secondAttribute="trailing" constant="20" id="jB4-1Z-egj"/>
+                                        <constraint firstItem="oJG-h1-3Fd" firstAttribute="top" secondItem="IT2-9e-aZU" secondAttribute="topMargin" constant="20" id="k7m-M2-59i"/>
+                                        <constraint firstItem="662-CN-MQQ" firstAttribute="centerY" secondItem="exr-L2-Ryc" secondAttribute="centerY" id="nKj-vn-oIj"/>
+                                        <constraint firstAttribute="trailing" secondItem="kxl-qf-uZd" secondAttribute="trailing" constant="20" id="rAr-ls-6su"/>
+                                        <constraint firstItem="oJG-h1-3Fd" firstAttribute="leading" secondItem="IT2-9e-aZU" secondAttribute="leadingMargin" constant="20" id="t92-Bk-4LG"/>
+                                        <constraint firstItem="kxl-qf-uZd" firstAttribute="centerY" secondItem="NnB-y1-cl8" secondAttribute="centerY" id="vPb-U4-xSv"/>
+                                        <constraint firstItem="hs7-T4-5pH" firstAttribute="centerY" secondItem="3Ir-sj-UiX" secondAttribute="centerY" id="wDY-wc-6sy"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="513" id="Zxv-JM-HSS" userLabel="Counters Cell">
-                                <rect key="frame" x="0.0" y="574" width="600" height="513"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoCell" rowHeight="809" id="Zxv-JM-HSS" userLabel="Info Cell" customClass="InfoTableViewCell" customModule="Overwatch_Guide" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="780" width="600" height="809"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zxv-JM-HSS" id="VI2-Xq-etg">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="512"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="808"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01M-ye-kxb">
-                                            <rect key="frame" x="107" y="24" width="81" height="81"/>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dtr-Jw-9wb">
-                                            <rect key="frame" x="107" y="146" width="81" height="81"/>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SVk-oz-L3q">
-                                            <rect key="frame" x="413" y="24" width="81" height="81"/>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D6U-hL-CTE">
-                                            <rect key="frame" x="413" y="146" width="81" height="81"/>
-                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Strategies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haG-MO-XRb">
+                                            <rect key="frame" x="10" y="18" width="142" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48m-C5-iGc">
+                                            <rect key="frame" x="10" y="59" width="580" height="285"/>
+                                            <mutableString key="text">Genji is a versatile flanker with a very high level of mobility. Genji is better suited up close to make use of his mobility and spread shurikens, but can still be formidable at range. Cyber-Agility makes Genji a difficult target and allows him to navigate the map with ease. Swift Strike allows Genji to engage, escape or move between targets efficiently. The damage on Swift Strike is considerable for most heroes, but is insignifanct to a tank. As such, Genji should use Swift Strike to either manoeuvre around his enemies or deal small but quick and easy damage. Reflect allows Genji to turn enemies' damage back towards them and even allows him to turn around entire ultimate abilities. This allows for potentially lethal burst damage, when it is timed properly and Genji is well positioned. Be wary when estimating your own abilities as Genji however, you are not the most agile hero nor do you deal the most damage, Genji fills a middle ground when it comes to these factors.</mutableString>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yb-ZR-Ey3">
+                                            <rect key="frame" x="10" y="394" width="77" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5t-0n-tew">
+                                            <rect key="frame" x="10" y="435" width="580" height="163"/>
+                                            <mutableString key="text">Genji is a versatile flanker with a very high level of mobility. Genji is better suited up close to make use of his mobility and spread shurikens, but can still be formidable at range. Cyber-Agility makes Genji a difficult target and allows him to navigate the map with ease. Swift Strike allows Genji to engage, escape or move between targets efficiently. The damage on Swift Strike is considerable for most heroes, but is insignifanct to a tank. As such, Genji should use Swift Strike to either manoeuvre around his enemies or deal small but quick and easy damage. </mutableString>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="F5t-0n-tew" firstAttribute="leading" secondItem="VI2-Xq-etg" secondAttribute="leading" constant="10" id="1ne-Qf-fXT"/>
+                                        <constraint firstAttribute="trailing" secondItem="F5t-0n-tew" secondAttribute="trailing" constant="10" id="2eH-eO-1s9"/>
+                                        <constraint firstItem="F5t-0n-tew" firstAttribute="top" secondItem="1yb-ZR-Ey3" secondAttribute="bottom" constant="20" id="6ih-oW-aBz"/>
+                                        <constraint firstItem="haG-MO-XRb" firstAttribute="leading" secondItem="VI2-Xq-etg" secondAttribute="leading" constant="10" id="Ghr-Qz-DEF"/>
+                                        <constraint firstItem="1yb-ZR-Ey3" firstAttribute="top" secondItem="48m-C5-iGc" secondAttribute="bottom" constant="50" id="Ihy-1E-T2u"/>
+                                        <constraint firstItem="48m-C5-iGc" firstAttribute="leading" secondItem="VI2-Xq-etg" secondAttribute="leading" constant="10" id="XUp-W4-6IS"/>
+                                        <constraint firstItem="haG-MO-XRb" firstAttribute="top" secondItem="VI2-Xq-etg" secondAttribute="topMargin" constant="10" id="Y2I-Q0-50g"/>
+                                        <constraint firstAttribute="trailing" secondItem="48m-C5-iGc" secondAttribute="trailing" constant="10" id="YsS-5K-XQw"/>
+                                        <constraint firstItem="1yb-ZR-Ey3" firstAttribute="leading" secondItem="VI2-Xq-etg" secondAttribute="leading" constant="10" id="hhK-uT-q6w"/>
+                                        <constraint firstItem="48m-C5-iGc" firstAttribute="top" secondItem="haG-MO-XRb" secondAttribute="bottom" constant="20" id="lvf-gf-ZOG"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

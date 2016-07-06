@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01FBDB091D2C7C2B00A4E751 /* HeroInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBDB081D2C7C2B00A4E751 /* HeroInfoViewController.swift */; };
+		01FBDB0E1D2C817F00A4E751 /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBDB0D1D2C817F00A4E751 /* BannerTableViewCell.swift */; };
+		01FBDB101D2C81C800A4E751 /* CountersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBDB0F1D2C81C800A4E751 /* CountersTableViewCell.swift */; };
+		01FBDB121D2C81D600A4E751 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBDB111D2C81D600A4E751 /* InfoTableViewCell.swift */; };
 		06B5239C1D2C6F8500C10FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5239B1D2C6F8500C10FB1 /* AppDelegate.swift */; };
 		06B5239E1D2C6F8500C10FB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5239D1D2C6F8500C10FB1 /* ViewController.swift */; };
 		06B523A11D2C6F8500C10FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B5239F1D2C6F8500C10FB1 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01FBDB081D2C7C2B00A4E751 /* HeroInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroInfoViewController.swift; sourceTree = "<group>"; };
+		01FBDB0D1D2C817F00A4E751 /* BannerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerTableViewCell.swift; sourceTree = "<group>"; };
+		01FBDB0F1D2C81C800A4E751 /* CountersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountersTableViewCell.swift; sourceTree = "<group>"; };
+		01FBDB111D2C81D600A4E751 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		06B523981D2C6F8500C10FB1 /* Overwatch Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Overwatch Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B5239B1D2C6F8500C10FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06B5239D1D2C6F8500C10FB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01FBDB0A1D2C812700A4E751 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				01FBDB081D2C7C2B00A4E751 /* HeroInfoViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		01FBDB0B1D2C813900A4E751 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01FBDB0C1D2C815C00A4E751 /* HeroInfo */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		01FBDB0C1D2C815C00A4E751 /* HeroInfo */ = {
+			isa = PBXGroup;
+			children = (
+				01FBDB0D1D2C817F00A4E751 /* BannerTableViewCell.swift */,
+				01FBDB0F1D2C81C800A4E751 /* CountersTableViewCell.swift */,
+				01FBDB111D2C81D600A4E751 /* InfoTableViewCell.swift */,
+			);
+			name = HeroInfo;
+			sourceTree = "<group>";
+		};
 		06B5238F1D2C6F8500C10FB1 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +88,8 @@
 		06B5239A1D2C6F8500C10FB1 /* Overwatch Guide */ = {
 			isa = PBXGroup;
 			children = (
+				01FBDB0B1D2C813900A4E751 /* Views */,
+				01FBDB0A1D2C812700A4E751 /* ViewControllers */,
 				06B5239B1D2C6F8500C10FB1 /* AppDelegate.swift */,
 				06B5239D1D2C6F8500C10FB1 /* ViewController.swift */,
 				06B5239F1D2C6F8500C10FB1 /* Main.storyboard */,
@@ -136,7 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				06B5239E1D2C6F8500C10FB1 /* ViewController.swift in Sources */,
+				01FBDB0E1D2C817F00A4E751 /* BannerTableViewCell.swift in Sources */,
+				01FBDB101D2C81C800A4E751 /* CountersTableViewCell.swift in Sources */,
+				01FBDB121D2C81D600A4E751 /* InfoTableViewCell.swift in Sources */,
 				06B5239C1D2C6F8500C10FB1 /* AppDelegate.swift in Sources */,
+				01FBDB091D2C7C2B00A4E751 /* HeroInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +328,7 @@
 				06B523AC1D2C6F8500C10FB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
