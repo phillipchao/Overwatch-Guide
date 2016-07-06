@@ -10,7 +10,7 @@ target ‘Overwatch Guide’ do
   pod 'Firebase'
   pod 'FirebaseUI', '~> 0.4'
   pod 'Firebase/Storage'
-  pod 'Alamofire', ‘~> 3.4’
-  pod ‘SwiftyJSON’ 
+  pod 'Alamofire', '~> 3.4'
+  pod 'SwiftyJSON'
 
 end
