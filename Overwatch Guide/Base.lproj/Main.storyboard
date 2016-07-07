@@ -1,25 +1,118 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LtS-ZO-U6h">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Page View Controller-->
+        <scene sceneID="Gme-Kt-WVh">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="85D-zY-t9Y" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnh-XF-kIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="-459"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uKu-7t-rtP">
+            <objects>
+                <viewController id="LtS-ZO-U6h" customClass="ViewController" customModule="Overwatch_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Yuq-uG-Onr"/>
+                        <viewControllerLayoutGuide type="bottom" id="kmL-gx-GZa"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="m1J-h1-YYj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ftz-xi-Swb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="656" y="498"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="0Of-v9-PpR">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" title="Content View Controller" id="mqZ-jQ-1HU" customClass="ContentViewController" customModule="Overwatch_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1JC-5y-lbj"/>
+                        <viewControllerLayoutGuide type="bottom" id="KRd-21-39J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="PageContentController" id="5oq-FN-NDQ" customClass="PageContent">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strong Against" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjH-i0-wkH">
+                                <rect key="frame" x="151" y="93" width="298" height="62"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="45"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8u-6X-KAh">
+                                <rect key="frame" x="329" y="188" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="AG9-KU-Dqc"/>
+                                    <constraint firstAttribute="width" constant="130" id="d7j-Qt-zlp"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="tasks copy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4v-dR-juh">
+                                <rect key="frame" x="329" y="389" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="RuJ-5R-vR7"/>
+                                    <constraint firstAttribute="height" constant="130" id="Tw2-oa-e8D"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="tasks copy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7m-bc-w9E">
+                                <rect key="frame" x="122" y="389" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Wah-4X-1AO"/>
+                                    <constraint firstAttribute="width" constant="130" id="fKV-xl-fF7"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="tasks copy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buZ-Co-vEm">
+                                <rect key="frame" x="122" y="188" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="BBF-jk-O3Y"/>
+                                    <constraint firstAttribute="height" constant="130" id="jI9-ni-c21"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="tasks copy"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EjH-i0-wkH" firstAttribute="top" secondItem="1JC-5y-lbj" secondAttribute="bottom" constant="73" id="AcS-zk-8A6"/>
+                            <constraint firstItem="r8u-6X-KAh" firstAttribute="leading" secondItem="buZ-Co-vEm" secondAttribute="trailing" priority="900" constant="50" id="EJ9-YW-TUE"/>
+                            <constraint firstItem="a4v-dR-juh" firstAttribute="top" secondItem="r8u-6X-KAh" secondAttribute="bottom" constant="50" id="V9j-0P-be1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r8u-6X-KAh" secondAttribute="trailing" constant="30" id="Y3P-dU-jfS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a4v-dR-juh" secondAttribute="trailing" constant="30" id="bm1-gL-o0q"/>
+                            <constraint firstItem="buZ-Co-vEm" firstAttribute="leading" secondItem="5oq-FN-NDQ" secondAttribute="leadingMargin" constant="30" id="dGp-Z1-rFI"/>
+                            <constraint firstItem="r8u-6X-KAh" firstAttribute="top" secondItem="EjH-i0-wkH" secondAttribute="bottom" constant="40" id="gqQ-Qq-Td3"/>
+                            <constraint firstItem="buZ-Co-vEm" firstAttribute="top" secondItem="EjH-i0-wkH" secondAttribute="bottom" constant="40" id="gr0-PM-C3t"/>
+                            <constraint firstItem="e7m-bc-w9E" firstAttribute="top" secondItem="buZ-Co-vEm" secondAttribute="bottom" constant="50" id="hAi-a0-WDm"/>
+                            <constraint firstItem="e7m-bc-w9E" firstAttribute="leading" secondItem="5oq-FN-NDQ" secondAttribute="leadingMargin" constant="30" id="o6N-fH-LhL"/>
+                            <constraint firstItem="EjH-i0-wkH" firstAttribute="centerX" secondItem="5oq-FN-NDQ" secondAttribute="centerX" id="pUJ-T6-6Ih"/>
+                            <constraint firstItem="a4v-dR-juh" firstAttribute="leading" secondItem="e7m-bc-w9E" secondAttribute="trailing" priority="900" constant="50" id="r6w-cU-uyA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hero1" destination="buZ-Co-vEm" id="nrH-vl-qMo"/>
+                        <outlet property="hero2" destination="r8u-6X-KAh" id="Cie-sl-Z3H"/>
+                        <outlet property="hero3" destination="e7m-bc-w9E" id="lK3-lJ-vbk"/>
+                        <outlet property="hero4" destination="a4v-dR-juh" id="zfP-zu-6K2"/>
+                        <outlet property="titleLabel" destination="EjH-i0-wkH" id="wnh-tT-hmF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIV-LE-TrN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="-413"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tasks copy" width="251" height="250"/>
+    </resources>
 </document>
