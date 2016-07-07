@@ -24,16 +24,18 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
             "An immaculate overview of your favorite heroes in one table, sectioned off by their role.",
             "Explore the expanded guide and abilities that is provided for each hero.",
             "Slide through the dynamic comparisons of strengths, weaknesses and suggested team pairings.")
-        self.guideImg = NSArray(objects: "tut1", "tut2", "tut3")
+        
+        self.guideImg = NSArray(objects: "tut1", "tut2", "Group")
         
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         self.pageViewController.dataSource = self
         
         var startVC = self.viewControllerAtIndex(0) as ContentViewController // hold the first view controller
+        
         var viewControllers = NSArray(object: startVC)
         
         self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .Forward, animated: true, completion: nil)
-        self.pageViewController.view.frame = CGRectMake(0, 30, self.view.frame.width, self.view.frame.size.height - 60)
+        self.pageViewController.view.frame = CGRectMake(0, 30, self.view.frame.width, self.view.frame.size.height - 80)
         
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)
@@ -47,11 +49,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     }
 
     @IBAction func restartAction(sender: AnyObject) {
-        
-        var startVC = self.viewControllerAtIndex(0) as ContentViewController
-        var viewControllers = NSArray(object: startVC)
-        
-        self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .Forward, animated: true, completion: nil)
+
     }
     
     

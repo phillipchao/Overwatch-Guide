@@ -18,13 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOf-mj-Bl8">
-                                <rect key="frame" x="267" y="562" width="66" height="30"/>
+                                <rect key="frame" x="267" y="556" width="66" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="66" id="y0D-qQ-8P8"/>
                                 </constraints>
-                                <state key="normal" title="Restart"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.92549019607843142" green="0.54117647058823526" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="restartAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fse-gm-u6r"/>
+                                    <segue destination="6Q3-ex-Wqy" kind="show" id="WBz-yp-s6E"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,29 +63,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BbU-tG-sQf">
-                                <rect key="frame" x="180" y="117" width="240" height="128"/>
+                                <rect key="frame" x="210" y="115" width="180" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="SaI-9i-Tpn"/>
-                                    <constraint firstAttribute="width" constant="240" id="YvG-MG-awc"/>
+                                    <constraint firstAttribute="height" constant="180" id="SaI-9i-Tpn"/>
+                                    <constraint firstAttribute="width" constant="180" id="YvG-MG-awc"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOc-gq-bBn">
-                                <rect key="frame" x="130" y="303" width="340" height="172"/>
+                                <rect key="frame" x="155" y="376" width="290" height="172"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="0H1-Kq-NN1"/>
+                                    <constraint firstAttribute="width" constant="290" id="g7J-dx-yZX"/>
                                     <constraint firstAttribute="width" constant="340" id="gFe-B9-1PL"/>
+                                    <constraint firstAttribute="height" constant="172" id="s6d-dq-aNH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0H1-Kq-NN1"/>
+                                        <exclude reference="gFe-B9-1PL"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BbU-tG-sQf" firstAttribute="centerX" secondItem="dOc-gq-bBn" secondAttribute="centerX" id="0oF-6S-Nwk"/>
-                            <constraint firstItem="BbU-tG-sQf" firstAttribute="top" secondItem="SM0-GL-FJp" secondAttribute="bottom" constant="97" id="6lH-Uu-KmI"/>
-                            <constraint firstItem="BbU-tG-sQf" firstAttribute="centerX" secondItem="A6r-Kb-gfX" secondAttribute="centerX" id="dTO-f4-QCG"/>
-                            <constraint firstItem="ojx-oa-ARi" firstAttribute="top" secondItem="dOc-gq-bBn" secondAttribute="bottom" constant="125" id="fBK-KP-t8d"/>
-                            <constraint firstItem="dOc-gq-bBn" firstAttribute="top" secondItem="BbU-tG-sQf" secondAttribute="bottom" constant="58" id="r85-Dh-jcD"/>
+                            <constraint firstItem="dOc-gq-bBn" firstAttribute="centerX" secondItem="BbU-tG-sQf" secondAttribute="centerX" id="0rq-MN-vzb"/>
+                            <constraint firstItem="dOc-gq-bBn" firstAttribute="top" secondItem="BbU-tG-sQf" secondAttribute="bottom" constant="81" id="CHN-dw-rDy"/>
+                            <constraint firstItem="ojx-oa-ARi" firstAttribute="top" secondItem="dOc-gq-bBn" secondAttribute="bottom" constant="52" id="PrP-bW-mOs"/>
+                            <constraint firstItem="dOc-gq-bBn" firstAttribute="centerX" secondItem="A6r-Kb-gfX" secondAttribute="centerX" id="caa-zR-rLu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -911,6 +922,7 @@
         <image name="uparrow" width="54" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="WBz-yp-s6E"/>
         <segue reference="YCw-Fb-kRa"/>
     </inferredMetricsTieBreakers>
 </document>
