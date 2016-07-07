@@ -20,7 +20,10 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.guideContents = NSArray(objects: "page one", "page two", "page three")
+        self.guideContents = NSArray(objects:
+            "An immaculate overview of your favorite heroes in one table, sectioned off by their role.",
+            "Explore the expanded guide and abilities that is provided for each hero.",
+            "Slide through the dynamic comparisons of strengths, weaknesses and suggested team pairings.")
         self.guideImg = NSArray(objects: "tut1", "tut2", "tut3")
         
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
