@@ -29,6 +29,22 @@ class HeroInfoViewController: UIViewController {
     
     @IBOutlet weak var upArrowButton: UIButton!
     
+    // Extra stuff
+    
+    func imageWithColor(colour: UIColor) -> UIImage {
+        let rect = CGRectMake(0, 0, 1, 1)
+        
+        // Create a 1 by 1 pixel content
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+        colour.setFill()
+        UIRectFill(rect)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+    
     // Main Stuff
     
     override func viewDidLoad() {
@@ -37,6 +53,7 @@ class HeroInfoViewController: UIViewController {
         // Set up variables
         profilePicture.layer.cornerRadius = profilePicture.frame.size.width / 2
         profilePicture.clipsToBounds = true
+        
     }
     
     // Extra Stuff

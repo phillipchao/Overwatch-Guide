@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MUe-21-Lbk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SFE-eo-LWx">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -41,7 +41,7 @@
         <!--Overwatch GO-->
         <scene sceneID="K6V-gK-UhY">
             <objects>
-                <viewController id="69g-Mz-O54" sceneMemberID="viewController">
+                <viewController id="69g-Mz-O54" customClass="MainScreenViewController" customModule="Overwatch_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DJ8-8f-ech"/>
                         <viewControllerLayoutGuide type="bottom" id="2xW-yr-sl5"/>
@@ -83,6 +83,9 @@
                                                     <constraint firstAttribute="height" constant="70" id="hzB-bB-ndO"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="rWm-1B-AqY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3n-WZ-7f0">
                                                 <rect key="frame" x="361" y="15" width="70" height="70"/>
@@ -91,6 +94,9 @@
                                                     <constraint firstAttribute="height" constant="70" id="UeB-8M-qI1"/>
                                                 </constraints>
                                                 <state key="normal" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="olf-Cd-61x"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkn-T4-vAU">
                                                 <rect key="frame" x="536" y="28" width="44" height="44"/>
@@ -100,6 +106,9 @@
                                                 </constraints>
                                                 <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
                                                 <state key="normal" image="rightarrow"/>
+                                                <connections>
+                                                    <action selector="moreButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="hVQ-zi-tFW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -136,6 +145,9 @@
                                                     <constraint firstAttribute="width" constant="70" id="drW-17-OQg"/>
                                                 </constraints>
                                                 <state key="normal" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="IEs-ks-Q5d"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPP-9h-0Z8">
                                                 <rect key="frame" x="361" y="15" width="70" height="70"/>
@@ -144,6 +156,9 @@
                                                     <constraint firstAttribute="height" constant="70" id="h0Z-xI-yi5"/>
                                                 </constraints>
                                                 <state key="normal" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="VHG-z1-V9s"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNx-UX-RZI">
                                                 <rect key="frame" x="536" y="28" width="44" height="44"/>
@@ -153,6 +168,9 @@
                                                 </constraints>
                                                 <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
                                                 <state key="normal" image="rightarrow"/>
+                                                <connections>
+                                                    <action selector="moreButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="8Vb-OZ-cxi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -189,6 +207,9 @@
                                                     <constraint firstAttribute="height" constant="70" id="opY-PJ-VGB"/>
                                                 </constraints>
                                                 <state key="normal" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="VdS-WN-j9g"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNP-gs-g7D">
                                                 <rect key="frame" x="361" y="15" width="70" height="70"/>
@@ -197,6 +218,9 @@
                                                     <constraint firstAttribute="height" constant="70" id="43z-AF-04E"/>
                                                 </constraints>
                                                 <state key="normal" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="WB7-2O-OcD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1I-6a-8Fq">
                                                 <rect key="frame" x="536" y="28" width="44" height="44"/>
@@ -206,6 +230,9 @@
                                                 </constraints>
                                                 <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
                                                 <state key="normal" image="rightarrow"/>
+                                                <connections>
+                                                    <action selector="moreButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="PJS-bq-OYo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -242,6 +269,9 @@
                                                     <constraint firstAttribute="height" constant="70" id="bqZ-OE-MhB"/>
                                                 </constraints>
                                                 <state key="normal" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="nCv-1K-iMd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14B-ug-gIo">
                                                 <rect key="frame" x="361" y="15" width="70" height="70"/>
@@ -250,6 +280,9 @@
                                                     <constraint firstAttribute="height" constant="70" id="df1-Q0-2YT"/>
                                                 </constraints>
                                                 <state key="normal" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="dEb-zv-QVU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kA-9Z-vah">
                                                 <rect key="frame" x="536" y="28" width="44" height="44"/>
@@ -259,6 +292,9 @@
                                                 </constraints>
                                                 <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
                                                 <state key="normal" image="rightarrow"/>
+                                                <connections>
+                                                    <action selector="moreButtonsAction:" destination="69g-Mz-O54" eventType="touchUpInside" id="h1R-zm-4P6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -276,19 +312,34 @@
                             <constraint firstItem="2xW-yr-sl5" firstAttribute="top" secondItem="S6k-xF-6kN" secondAttribute="bottom" constant="10" id="z2B-PR-SIy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Overwatch GO" id="5RM-IL-Lwf"/>
+                    <navigationItem key="navigationItem" title="Overwatch GO" id="5RM-IL-Lwf">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Jgu-pf-keT"/>
+                    </navigationItem>
                     <connections>
-                        <segue destination="MUe-21-Lbk" kind="show" id="ONR-EL-fsD"/>
+                        <outlet property="defenseImage1" destination="oxr-UF-wvc" id="BJD-CX-ljC"/>
+                        <outlet property="defenseImage2" destination="wPP-9h-0Z8" id="EHU-Vv-f0r"/>
+                        <outlet property="defenseMoreButton" destination="CNx-UX-RZI" id="fIG-iA-Bek"/>
+                        <outlet property="offenseImage1" destination="a3J-RX-jPC" id="8pS-Bm-NEy"/>
+                        <outlet property="offenseImage2" destination="i3n-WZ-7f0" id="NJq-pi-ijK"/>
+                        <outlet property="offenseMoreButton" destination="mkn-T4-vAU" id="dog-Gr-qlB"/>
+                        <outlet property="supportImage1" destination="2K4-Gr-RoW" id="wva-f9-hLn"/>
+                        <outlet property="supportImage2" destination="14B-ug-gIo" id="jYP-Vg-edK"/>
+                        <outlet property="supportMoreButton" destination="0kA-9Z-vah" id="VmF-xk-u5w"/>
+                        <outlet property="tankImage1" destination="hxY-fg-LJg" id="Ydm-Tr-MyM"/>
+                        <outlet property="tankImage2" destination="gNP-gs-g7D" id="ohg-TZ-5Ke"/>
+                        <outlet property="tankMoreButton" destination="Z1I-6a-8Fq" id="117-gm-NK0"/>
+                        <segue destination="MUe-21-Lbk" kind="show" identifier="allHeroesSegue" id="Al9-Nb-JL8"/>
+                        <segue destination="PZC-mD-L05" kind="show" identifier="heroInfoSegue" id="YCw-Fb-kRa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ki7-Bt-i6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3176" y="396"/>
         </scene>
-        <!--Offense or Whatever-->
+        <!--All Heroes-->
         <scene sceneID="VP9-EA-6Pn">
             <objects>
-                <viewController title="Offense or Whatever" id="MUe-21-Lbk" sceneMemberID="viewController">
+                <viewController title="All Heroes" id="MUe-21-Lbk" customClass="AllHeroesViewController" customModule="Overwatch_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wMe-N7-Qfc"/>
                         <viewControllerLayoutGuide type="bottom" id="kk5-Vv-dK7"/>
@@ -298,7 +349,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="left" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Rw8-8O-odB">
-                                <rect key="frame" x="30" y="144" width="540" height="376"/>
+                                <rect key="frame" x="30" y="124" width="540" height="416"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="V5n-pJ-oHK">
                                         <rect key="frame" x="0.0" y="0.0" width="540" height="100"/>
@@ -310,6 +361,9 @@
                                                     <constraint firstAttribute="width" constant="100" id="lH0-h6-64R"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="t5i-6d-dmB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NO-OC-GYb">
                                                 <rect key="frame" x="440" y="0.0" width="100" height="100"/>
@@ -318,11 +372,14 @@
                                                     <constraint firstAttribute="width" constant="100" id="TvP-y9-DT6"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="Uld-dv-bb4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zLi-pj-eZP">
-                                        <rect key="frame" x="0.0" y="138" width="540" height="100"/>
+                                        <rect key="frame" x="0.0" y="158" width="540" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUc-0Y-kRT">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -331,6 +388,9 @@
                                                     <constraint firstAttribute="height" constant="100" id="dQy-Vi-tlB"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="z3s-v8-00r"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJR-po-C7z">
                                                 <rect key="frame" x="440" y="0.0" width="100" height="100"/>
@@ -339,11 +399,14 @@
                                                     <constraint firstAttribute="height" constant="100" id="uvs-02-GXg"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="gDx-GP-zIp"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="bw9-Mt-tiq">
-                                        <rect key="frame" x="0.0" y="276" width="540" height="100"/>
+                                        <rect key="frame" x="0.0" y="316" width="540" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LT5-Sz-5bE">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -352,6 +415,9 @@
                                                     <constraint firstAttribute="height" constant="100" id="Fd8-yY-GUx"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="ZHd-2f-siu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-Za-xnm">
                                                 <rect key="frame" x="440" y="0.0" width="100" height="100"/>
@@ -360,6 +426,9 @@
                                                     <constraint firstAttribute="height" constant="100" id="eun-GH-1pM"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="temp"/>
+                                                <connections>
+                                                    <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="Tvp-2H-4Wn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -369,20 +438,29 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Rw8-8O-odB" firstAttribute="leading" secondItem="nkJ-mZ-thJ" secondAttribute="leading" constant="30" id="2DB-im-PJJ"/>
-                            <constraint firstItem="kk5-Vv-dK7" firstAttribute="top" secondItem="Rw8-8O-odB" secondAttribute="bottom" constant="80" id="Hfh-Pi-n3M"/>
-                            <constraint firstItem="Rw8-8O-odB" firstAttribute="top" secondItem="wMe-N7-Qfc" secondAttribute="bottom" constant="80" id="IMA-ZL-uKk"/>
+                            <constraint firstItem="kk5-Vv-dK7" firstAttribute="top" secondItem="Rw8-8O-odB" secondAttribute="bottom" constant="60" id="Hfh-Pi-n3M"/>
+                            <constraint firstItem="Rw8-8O-odB" firstAttribute="top" secondItem="wMe-N7-Qfc" secondAttribute="bottom" constant="60" id="IMA-ZL-uKk"/>
                             <constraint firstAttribute="trailing" secondItem="Rw8-8O-odB" secondAttribute="trailing" constant="30" id="xHT-ma-MOz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image1" destination="FG7-Vc-mBf" id="ADt-gm-MC6"/>
+                        <outlet property="image2" destination="9NO-OC-GYb" id="Bgg-xW-6gZ"/>
+                        <outlet property="image3" destination="yUc-0Y-kRT" id="PX3-pS-wBe"/>
+                        <outlet property="image4" destination="SJR-po-C7z" id="695-TM-FXj"/>
+                        <outlet property="image5" destination="LT5-Sz-5bE" id="vS3-qF-7lt"/>
+                        <outlet property="image6" destination="PTr-Za-xnm" id="m6Z-yA-DMG"/>
+                        <segue destination="PZC-mD-L05" kind="show" identifier="heroInfoSegue" id="jMn-tA-uCg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysZ-K0-N2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3915" y="396"/>
         </scene>
-        <!--Hero Info View Controller-->
+        <!--Hero Info-->
         <scene sceneID="WPR-q9-XH6">
             <objects>
-                <viewController id="PZC-mD-L05" customClass="HeroInfoViewController" customModule="Overwatch_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Hero Info" id="PZC-mD-L05" customClass="HeroInfoViewController" customModule="Overwatch_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Zm-8y-f1V"/>
                         <viewControllerLayoutGuide type="bottom" id="2M6-ov-Oot"/>
@@ -391,13 +469,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header bg" translatesAutoresizingMaskIntoConstraints="NO" id="X5e-fs-GAF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="header bg" translatesAutoresizingMaskIntoConstraints="NO" id="X5e-fs-GAF">
                                 <rect key="frame" x="0.0" y="-10" width="600" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="AjI-BK-9yO"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mgu-CM-1T6">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mgu-CM-1T6">
                                 <rect key="frame" x="190" y="180" width="220" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="6pI-7x-lk0">
@@ -454,13 +532,13 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y77-Um-nvX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Guide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y77-Um-nvX">
                                 <rect key="frame" x="277" y="290" width="47" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-L6-SIV">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-L6-SIV">
                                 <rect key="frame" x="20" y="314" width="560" height="236"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -475,7 +553,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="uparrow"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reinhardt_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Mbt-Fp-mfu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Reinhardt_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Mbt-Fp-mfu">
                                 <rect key="frame" x="260" y="90" width="80" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -483,7 +561,7 @@
                                     <constraint firstAttribute="width" constant="80" id="zxS-5T-zDT"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reinhardt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-7Z-178">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Reinhardt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-7Z-178">
                                 <rect key="frame" x="221" y="29" width="159" height="51"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="37"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -557,8 +635,8 @@
                                     <segue destination="eyc-vk-lic" kind="show" id="xPb-a5-X5g"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="An immaculate overview of your favorite heroes in one table, sectioned off by their role." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMe-vK-vaS">
-                                <rect key="frame" x="60" y="375" width="480" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An immaculate overview of your favorite heroes in one table, sectioned off by their role." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMe-vK-vaS">
+                                <rect key="frame" x="60" y="375" width="480" height="44"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -615,8 +693,8 @@
                                     <segue destination="qhV-hO-y9y" kind="show" id="j9o-10-jTI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Explore the expanded guide and abilities that is provided for each hero." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZv-Hc-L7B">
-                                <rect key="frame" x="60" y="380" width="480" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore the expanded guide and abilities that is provided for each hero." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZv-Hc-L7B">
+                                <rect key="frame" x="60" y="380" width="480" height="44"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -726,4 +804,7 @@
         <image name="tut32" width="197" height="197"/>
         <image name="uparrow" width="54" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jMn-tA-uCg"/>
+    </inferredMetricsTieBreakers>
 </document>
