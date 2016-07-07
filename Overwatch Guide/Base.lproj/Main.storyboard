@@ -5,23 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Overwatch_Guide" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="de6-qN-nnR">
             <objects>
@@ -348,10 +331,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="left" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Rw8-8O-odB">
+                            <stackView opaque="NO" contentMode="left" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Rw8-8O-odB">
                                 <rect key="frame" x="30" y="124" width="540" height="416"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="V5n-pJ-oHK">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="V5n-pJ-oHK">
                                         <rect key="frame" x="0.0" y="0.0" width="540" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG7-Vc-mBf">
@@ -360,7 +343,7 @@
                                                     <constraint firstAttribute="height" constant="100" id="O08-06-Rlt"/>
                                                     <constraint firstAttribute="width" constant="100" id="lH0-h6-64R"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="temp"/>
+                                                <state key="normal" image="temp"/>
                                                 <connections>
                                                     <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="t5i-6d-dmB"/>
                                                 </connections>
@@ -371,14 +354,14 @@
                                                     <constraint firstAttribute="height" constant="100" id="Mda-eM-Lhy"/>
                                                     <constraint firstAttribute="width" constant="100" id="TvP-y9-DT6"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="temp"/>
+                                                <state key="normal" image="temp"/>
                                                 <connections>
                                                     <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="Uld-dv-bb4"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zLi-pj-eZP">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="zLi-pj-eZP">
                                         <rect key="frame" x="0.0" y="158" width="540" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUc-0Y-kRT">
@@ -387,7 +370,7 @@
                                                     <constraint firstAttribute="width" constant="100" id="EO2-gR-hPY"/>
                                                     <constraint firstAttribute="height" constant="100" id="dQy-Vi-tlB"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="temp"/>
+                                                <state key="normal" image="temp"/>
                                                 <connections>
                                                     <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="z3s-v8-00r"/>
                                                 </connections>
@@ -398,14 +381,14 @@
                                                     <constraint firstAttribute="width" constant="100" id="QNQ-Gu-cCN"/>
                                                     <constraint firstAttribute="height" constant="100" id="uvs-02-GXg"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="temp"/>
+                                                <state key="normal" image="temp"/>
                                                 <connections>
                                                     <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="gDx-GP-zIp"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="bw9-Mt-tiq">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="bw9-Mt-tiq">
                                         <rect key="frame" x="0.0" y="316" width="540" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LT5-Sz-5bE">
@@ -414,7 +397,7 @@
                                                     <constraint firstAttribute="width" constant="100" id="6Ug-Vs-miR"/>
                                                     <constraint firstAttribute="height" constant="100" id="Fd8-yY-GUx"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="temp"/>
+                                                <state key="normal" image="temp"/>
                                                 <connections>
                                                     <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="ZHd-2f-siu"/>
                                                 </connections>
@@ -425,7 +408,7 @@
                                                     <constraint firstAttribute="width" constant="100" id="7dF-K7-W1a"/>
                                                     <constraint firstAttribute="height" constant="100" id="eun-GH-1pM"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="temp"/>
+                                                <state key="normal" image="temp"/>
                                                 <connections>
                                                     <action selector="heroButtonsAction:" destination="MUe-21-Lbk" eventType="touchUpInside" id="Tvp-2H-4Wn"/>
                                                 </connections>
@@ -443,6 +426,9 @@
                             <constraint firstAttribute="trailing" secondItem="Rw8-8O-odB" secondAttribute="trailing" constant="30" id="xHT-ma-MOz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="All Heroes" id="70A-sE-wQN">
+                        <barButtonItem key="backBarButtonItem" title=" " id="639-NP-ubS"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="image1" destination="FG7-Vc-mBf" id="ADt-gm-MC6"/>
                         <outlet property="image2" destination="9NO-OC-GYb" id="Bgg-xW-6gZ"/>
@@ -469,13 +455,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="header bg" translatesAutoresizingMaskIntoConstraints="NO" id="X5e-fs-GAF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header bg" translatesAutoresizingMaskIntoConstraints="NO" id="X5e-fs-GAF">
                                 <rect key="frame" x="0.0" y="-10" width="600" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="AjI-BK-9yO"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mgu-CM-1T6">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mgu-CM-1T6">
                                 <rect key="frame" x="190" y="180" width="220" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="6pI-7x-lk0">
@@ -532,7 +518,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Guide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y77-Um-nvX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y77-Um-nvX">
                                 <rect key="frame" x="277" y="290" width="47" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -546,7 +532,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqZ-UO-yDe">
-                                <rect key="frame" x="278" y="536" width="44" height="44"/>
+                                <rect key="frame" x="278" y="556" width="44" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="DJR-XH-3z3"/>
                                     <constraint firstAttribute="width" constant="44" id="He5-YX-hEp"/>
@@ -557,7 +544,7 @@
                                     <segue destination="zhb-FT-541" kind="show" id="GBO-Ux-A1l"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Reinhardt_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Mbt-Fp-mfu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reinhardt_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Mbt-Fp-mfu">
                                 <rect key="frame" x="260" y="90" width="80" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -565,8 +552,8 @@
                                     <constraint firstAttribute="width" constant="80" id="zxS-5T-zDT"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Reinhardt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-7Z-178">
-                                <rect key="frame" x="221" y="29" width="159" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reinhardt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-7Z-178">
+                                <rect key="frame" x="221" y="19" width="159" height="51"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="37"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -579,13 +566,13 @@
                             <constraint firstAttribute="trailing" secondItem="bjw-L6-SIV" secondAttribute="trailing" constant="20" id="H8c-FP-gZM"/>
                             <constraint firstAttribute="trailing" secondItem="X5e-fs-GAF" secondAttribute="trailing" id="L9f-YF-b5G"/>
                             <constraint firstItem="X5e-fs-GAF" firstAttribute="leading" secondItem="fDA-8Z-vBg" secondAttribute="leading" id="Mhs-ft-5gQ"/>
-                            <constraint firstItem="2M6-ov-Oot" firstAttribute="top" secondItem="SqZ-UO-yDe" secondAttribute="bottom" constant="20" id="TZJ-zk-Ie8"/>
+                            <constraint firstItem="2M6-ov-Oot" firstAttribute="top" secondItem="SqZ-UO-yDe" secondAttribute="bottom" id="TZJ-zk-Ie8"/>
                             <constraint firstItem="Y77-Um-nvX" firstAttribute="centerX" secondItem="Mgu-CM-1T6" secondAttribute="centerX" id="V1p-UX-b9n"/>
                             <constraint firstItem="bjw-L6-SIV" firstAttribute="top" secondItem="Y77-Um-nvX" secondAttribute="bottom" id="VV1-eK-0LH"/>
-                            <constraint firstItem="Mbt-Fp-mfu" firstAttribute="top" secondItem="o1J-7Z-178" secondAttribute="bottom" constant="10" id="Zsb-zg-Scq"/>
+                            <constraint firstItem="X5e-fs-GAF" firstAttribute="top" secondItem="o1J-7Z-178" secondAttribute="bottom" constant="-80" id="WOh-Mf-bxU"/>
                             <constraint firstItem="Mbt-Fp-mfu" firstAttribute="centerX" secondItem="X5e-fs-GAF" secondAttribute="centerX" id="ak8-xj-Z1j"/>
                             <constraint firstItem="Mbt-Fp-mfu" firstAttribute="top" secondItem="X5e-fs-GAF" secondAttribute="bottom" constant="-40" id="cE7-Z8-XNt"/>
-                            <constraint firstItem="X5e-fs-GAF" firstAttribute="top" secondItem="6Zm-8y-f1V" secondAttribute="bottom" constant="-30" id="eVg-Uu-Bbu"/>
+                            <constraint firstItem="X5e-fs-GAF" firstAttribute="top" secondItem="6Zm-8y-f1V" secondAttribute="bottom" constant="-74" id="eVg-Uu-Bbu"/>
                             <constraint firstItem="SqZ-UO-yDe" firstAttribute="top" secondItem="bjw-L6-SIV" secondAttribute="bottom" constant="20" id="gIb-lp-u6N"/>
                             <constraint firstItem="Y77-Um-nvX" firstAttribute="top" secondItem="Mgu-CM-1T6" secondAttribute="bottom" constant="20" id="iPT-WR-xX9"/>
                             <constraint firstItem="o1J-7Z-178" firstAttribute="centerX" secondItem="fDA-8Z-vBg" secondAttribute="centerX" id="mXb-HO-OTG"/>
@@ -642,10 +629,10 @@
             </objects>
             <point key="canvasLocation" x="3176" y="1957"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutorial Page 1-->
         <scene sceneID="Mga-J6-hhv">
             <objects>
-                <viewController id="SFE-eo-LWx" sceneMemberID="viewController">
+                <viewController title="Tutorial Page 1" id="SFE-eo-LWx" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q5a-Zx-7x7"/>
                         <viewControllerLayoutGuide type="bottom" id="rq6-0m-1ht"/>
@@ -700,10 +687,10 @@
             </objects>
             <point key="canvasLocation" x="1419" y="-340"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutorial Page 2-->
         <scene sceneID="TK9-6U-KTK">
             <objects>
-                <viewController id="eyc-vk-lic" sceneMemberID="viewController">
+                <viewController title="Tutorial Page 2" id="eyc-vk-lic" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bF4-ZM-FzM"/>
                         <viewControllerLayoutGuide type="bottom" id="L2q-gm-mtr"/>
@@ -758,10 +745,10 @@
             </objects>
             <point key="canvasLocation" x="1419" y="396"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutorial Page 3-->
         <scene sceneID="dRb-Ch-9ej">
             <objects>
-                <viewController id="qhV-hO-y9y" sceneMemberID="viewController">
+                <viewController title="Tutorial Page 3" id="qhV-hO-y9y" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lkd-Bd-am2"/>
                         <viewControllerLayoutGuide type="bottom" id="A6e-cY-cXR"/>

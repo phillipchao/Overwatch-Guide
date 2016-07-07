@@ -65,21 +65,21 @@ class MainScreenViewController: UIViewController {
             
             switch sender as! UIButton {
             case offenseImage1:
-                print("Offense 1")
+                destination.title = "Genji"
             case offenseImage2:
-                print("Offense 1")
+                destination.title = "McCree"
             case defenseImage1:
-                print("Offense 1")
+                destination.title = "Bastion"
             case defenseImage2:
-                print("Offense 1")
+                destination.title = "Hanzo"
             case tankImage1:
-                print("Offense 1")
+                destination.title = "D.Va"
             case tankImage2:
-                print("Offense 1")
+                destination.title = "Reinhardt"
             case supportImage1:
-                print("Offense 1")
+                destination.title = "Lucio"
             case supportImage2:
-                print("Offense 1")
+                destination.title = "Mercy"
             default:
                 print("Something went wrong")
                 break
@@ -93,19 +93,7 @@ class MainScreenViewController: UIViewController {
         super.viewDidLoad()
         
         // Create an array of images
-        let offImg1 = HeroIconHelper.Genji
-        let offImg2 = UIImage(named: "McCree_icon")
-        
-        let defImg1 = UIImage(named: "Bastion_icon")
-        let defImg2 = UIImage(named: "Hanzo_icon")
-        
-        let tanImg1 = UIImage(named: "DVA_icon")
-        let tanImg2 = UIImage(named: "Reinhardt_icon")
-        
-        let suppImg1 = UIImage(named: "Lucio_icon")
-        let suppImg2 = UIImage(named: "Mercy_icon")
-        
-        let imgArray = [offImg1, offImg2, defImg1, defImg2, tanImg1, tanImg2, suppImg1, suppImg2]
+        let imgArray = [HeroIconHelper.Genji, HeroIconHelper.McCree, HeroIconHelper.Bastion, HeroIconHelper.Hanzo, HeroIconHelper.DVA, HeroIconHelper.Reinhardt, HeroIconHelper.Lucio, HeroIconHelper.Mercy]
         
         // Create an array of the button
         let buttonArray = [offenseImage1, offenseImage2, defenseImage1, defenseImage2, tankImage1, tankImage2, supportImage1, supportImage2]
@@ -116,6 +104,5 @@ class MainScreenViewController: UIViewController {
             buttonArray[i].layer.cornerRadius = buttonArray[i].frame.size.width / 2
             buttonArray[i].clipsToBounds = true
         }
-        
     }
 }
