@@ -17,6 +17,7 @@
 		06B523A31D2C6F8500C10FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B523A21D2C6F8500C10FB1 /* Assets.xcassets */; };
 		06B523A61D2C6F8500C10FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B523A41D2C6F8500C10FB1 /* LaunchScreen.storyboard */; };
 		B423FC9E90E6D34892E6F056 /* Pods_Overwatch_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A5178892701F103C3F4AD9 /* Pods_Overwatch_Guide.framework */; };
+		FE861C851D2E49640012CC75 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE861C841D2E49640012CC75 /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C2A5178892701F103C3F4AD9 /* Pods_Overwatch_Guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Overwatch_Guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CD8D0542272F5ED887F2F5 /* Pods-Overwatch Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch Guide.release.xcconfig"; path = "Pods/Target Support Files/Pods-Overwatch Guide/Pods-Overwatch Guide.release.xcconfig"; sourceTree = "<group>"; };
 		EC2326EDDF8378D476412DEB /* Pods-Overwatch Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Overwatch Guide/Pods-Overwatch Guide.debug.xcconfig"; sourceTree = "<group>"; };
+		FE861C841D2E49640012CC75 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				01AAC5CE1D2DE3560007CAA9 /* MainScreenViewController.swift */,
 				01AAC5D01D2DE3C40007CAA9 /* AllHeroesViewController.swift */,
 				01FBDB131D2C952200A4E751 /* HeroInfoViewController.swift */,
+				FE861C841D2E49640012CC75 /* ContentViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				06B5239C1D2C6F8500C10FB1 /* AppDelegate.swift in Sources */,
 				01AAC5D11D2DE3C40007CAA9 /* AllHeroesViewController.swift in Sources */,
 				01FBDB141D2C952200A4E751 /* HeroInfoViewController.swift in Sources */,
+				FE861C851D2E49640012CC75 /* ContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
