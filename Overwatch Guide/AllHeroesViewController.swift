@@ -35,70 +35,70 @@ class AllHeroesViewController: UIViewController {
         if sender?.imageForState(.Normal) == HeroIconHelper.Genji {
             destination.title = "Genji"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.McCree {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.McCree {
             destination.title = "McCree"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Pharah {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Pharah {
             destination.title = "Pharah"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Reaper {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Reaper {
             destination.title = "Reaper"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Soldier76 {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Soldier76 {
             destination.title = "Soldier 76"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Tracer {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Tracer {
             destination.title = "Tracer"
         }
         
         // Defense
-        if sender?.imageForState(.Normal) == HeroIconHelper.Bastion {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Bastion {
             destination.title = "Bastion"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Hanzo {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Hanzo {
             destination.title = "Hanzo"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Junkrat {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Junkrat {
             destination.title = "Junkrat"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Mei {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Mei {
             destination.title = "Mei"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Torbjorn {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Torbjorn {
             destination.title = "Torbjorn"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Widowmaker {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Widowmaker {
             destination.title = "Widowmaker"
         }
         
         // Tank
-        if sender?.imageForState(.Normal) == HeroIconHelper.DVA {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.DVA {
             destination.title = "D.Va"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Reinhardt {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Reinhardt {
             destination.title = "Reinhardt"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Roadhog {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Roadhog {
             destination.title = "Roadhog"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Winston{
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Winston{
             destination.title = "Winston"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Zarya {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Zarya {
             destination.title = "Zarya"
         }
         
         // Support
-        if sender?.imageForState(.Normal) == HeroIconHelper.Lucio {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Lucio {
             destination.title = "Lucio"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Mercy {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Mercy {
             destination.title = "Mercy"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Symmetra {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Symmetra {
             destination.title = "Symmetra"
         }
-        if sender?.imageForState(.Normal) == HeroIconHelper.Zenyatta {
+        else if sender?.imageForState(.Normal) == HeroIconHelper.Zenyatta {
             destination.title = "Zenyatta"
         }
     }

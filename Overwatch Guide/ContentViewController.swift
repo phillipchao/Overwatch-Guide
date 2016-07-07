@@ -31,10 +31,19 @@ class ContentViewController: UIViewController {
         
         self.titleLabel.text = self.titleText
         
-        hero1.setImage(HeroIconHelper.Bastion, forState: .Normal)
-        hero2.setImage(HeroIconHelper.Bastion, forState: .Normal)
-        hero3.setImage(HeroIconHelper.Bastion, forState: .Normal)
-        hero4.setImage(HeroIconHelper.Bastion, forState: .Normal)
+        hero1.setImage(HeroIconHelper.Reinhardt, forState: .Normal)
+        hero2.setImage(HeroIconHelper.Pharah, forState: .Normal)
+        hero3.setImage(HeroIconHelper.Junkrat, forState: .Normal)
+        hero4.setImage(HeroIconHelper.Roadhog, forState: .Normal)
+        
+        hero1.layer.cornerRadius = hero1.frame.size.width / 2
+        hero1.clipsToBounds = true
+        hero2.layer.cornerRadius = hero2.frame.size.width / 2
+        hero2.clipsToBounds = true
+        hero3.layer.cornerRadius = hero3.frame.size.width / 2
+        hero3.clipsToBounds = true
+        hero4.layer.cornerRadius = hero4.frame.size.width / 2
+        hero4.clipsToBounds = true
     }
     
 }

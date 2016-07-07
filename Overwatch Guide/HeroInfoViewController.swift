@@ -168,10 +168,10 @@ class HeroInfoViewController: UIViewController {
         profilePicture.clipsToBounds = true
         
         // Make Navigation Bar Transparent
-        self.title = ""
+        /*self.title = ""
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
-        self.navigationController!.navigationBar.translucent = true
+        self.navigationController!.navigationBar.translucent = true*/
         
         self.preferredStatusBarStyle()
     }
