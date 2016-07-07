@@ -173,7 +173,7 @@ class HeroInfoViewController: UIViewController {
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationController!.navigationBar.translucent = true
         
-        //self.navigationController!.navigationBar.topItem!.title = "Back"
+        self.preferredStatusBarStyle()
     }
     
     // Extra Stuff

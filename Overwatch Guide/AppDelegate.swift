@@ -22,6 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSFontAttributeName: UIFont(name: "Avenir Book", size: 20)!
         ]
         
+        // Set up page view controllers
+        var pageController = UIPageControl.appearance()
+        pageController.pageIndicatorTintColor = UIColor.lightGrayColor()
+        pageController.currentPageIndicatorTintColor = UIColor.orangeColor()
+        pageController.backgroundColor = UIColor.whiteColor()
+        
         return true
     }
 
