@@ -91,5 +91,31 @@ class MainScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Create an array of images
+        let offImg1 = HeroIconHelper.Genji
+        let offImg2 = UIImage(named: "McCree_icon")
+        
+        let defImg1 = UIImage(named: "Bastion_icon")
+        let defImg2 = UIImage(named: "Hanzo_icon")
+        
+        let tanImg1 = UIImage(named: "DVA_icon")
+        let tanImg2 = UIImage(named: "Reinhardt_icon")
+        
+        let suppImg1 = UIImage(named: "Lucio_icon")
+        let suppImg2 = UIImage(named: "Mercy_icon")
+        
+        let imgArray = [offImg1, offImg2, defImg1, defImg2, tanImg1, tanImg2, suppImg1, suppImg2]
+        
+        // Create an array of the button
+        let buttonArray = [offenseImage1, offenseImage2, defenseImage1, defenseImage2, tankImage1, tankImage2, supportImage1, supportImage2]
+        
+        // Set up the button
+        for i in 0...buttonArray.count-1 {
+            buttonArray[i].setImage(imgArray[i], forState: .Normal)
+            buttonArray[i].layer.cornerRadius = buttonArray[i].frame.size.width / 2
+            buttonArray[i].clipsToBounds = true
+        }
+        
     }
 }
