@@ -15,8 +15,6 @@
 		01DF57591D2EFA050078B524 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DF57581D2EFA050078B524 /* ContentViewController.swift */; };
 		01DF575B1D2EFA2E0078B524 /* CountersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DF575A1D2EFA2E0078B524 /* CountersViewController.swift */; };
 		01DF575D1D2F00470078B524 /* CountersHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DF575C1D2F00470078B524 /* CountersHelper.swift */; };
-		01DF575F1D2F0A050078B524 /* TutorialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DF575E1D2F0A050078B524 /* TutorialsViewController.swift */; };
-		01DF57611D2F0AD80078B524 /* TutorialContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DF57601D2F0AD80078B524 /* TutorialContentViewController.swift */; };
 		01DF57641D2F19330078B524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DF57621D2F19330078B524 /* Main.storyboard */; };
 		01FBDB141D2C952200A4E751 /* HeroInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBDB131D2C952200A4E751 /* HeroInfoViewController.swift */; };
 		06B5239C1D2C6F8500C10FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5239B1D2C6F8500C10FB1 /* AppDelegate.swift */; };
@@ -35,8 +33,6 @@
 		01DF57581D2EFA050078B524 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		01DF575A1D2EFA2E0078B524 /* CountersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountersViewController.swift; sourceTree = "<group>"; };
 		01DF575C1D2F00470078B524 /* CountersHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountersHelper.swift; sourceTree = "<group>"; };
-		01DF575E1D2F0A050078B524 /* TutorialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialsViewController.swift; sourceTree = "<group>"; };
-		01DF57601D2F0AD80078B524 /* TutorialContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialContentViewController.swift; sourceTree = "<group>"; };
 		01DF57631D2F19330078B524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01FBDB131D2C952200A4E751 /* HeroInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroInfoViewController.swift; sourceTree = "<group>"; };
 		06B523981D2C6F8500C10FB1 /* Overwatch Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Overwatch Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,8 +77,6 @@
 				01FBDB131D2C952200A4E751 /* HeroInfoViewController.swift */,
 				01DF57581D2EFA050078B524 /* ContentViewController.swift */,
 				01DF575A1D2EFA2E0078B524 /* CountersViewController.swift */,
-				01DF575E1D2F0A050078B524 /* TutorialsViewController.swift */,
-				01DF57601D2F0AD80078B524 /* TutorialContentViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -273,13 +267,11 @@
 				01AAC5C91D2D99160007CAA9 /* JSONHelper.swift in Sources */,
 				01DF57591D2EFA050078B524 /* ContentViewController.swift in Sources */,
 				06B5239C1D2C6F8500C10FB1 /* AppDelegate.swift in Sources */,
-				01DF575F1D2F0A050078B524 /* TutorialsViewController.swift in Sources */,
 				01DF575D1D2F00470078B524 /* CountersHelper.swift in Sources */,
 				01AAC5D11D2DE3C40007CAA9 /* AllHeroesViewController.swift in Sources */,
 				01FBDB141D2C952200A4E751 /* HeroInfoViewController.swift in Sources */,
 				01B8E36E1D2ECB7D00ABAD08 /* HeroIconHelper.swift in Sources */,
 				01DF575B1D2EFA2E0078B524 /* CountersViewController.swift in Sources */,
-				01DF57611D2F0AD80078B524 /* TutorialContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

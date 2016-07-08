@@ -21,20 +21,14 @@ class ContentViewController: UIViewController {
     var pageIndex: Int = 0
     
     var titleText: String!
-    var pageHero1: String!
-    var pageHero2: String!
-    var pageHero3: String!
-    var pageHero4: String!
+    var myHero: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.titleLabel.text = self.titleText
         
-        hero1.setImage(HeroIconHelper.Reinhardt, forState: .Normal)
-        hero2.setImage(HeroIconHelper.Pharah, forState: .Normal)
-        hero3.setImage(HeroIconHelper.Junkrat, forState: .Normal)
-        hero4.setImage(HeroIconHelper.Roadhog, forState: .Normal)
+        let imgList = CountersHelper.returnIcons(self.myHero)
         
         hero1.layer.cornerRadius = hero1.frame.size.width / 2
         hero1.clipsToBounds = true
@@ -44,6 +38,11 @@ class ContentViewController: UIViewController {
         hero3.clipsToBounds = true
         hero4.layer.cornerRadius = hero4.frame.size.width / 2
         hero4.clipsToBounds = true
+        
+        hero1.setImage(imgList![0], forState: .Normal)
+        hero2.setImage(imgList![1], forState: .Normal)
+        hero3.setImage(imgList![2], forState: .Normal)
+        hero4.setImage(imgList![3], forState: .Normal)
     }
     
 }

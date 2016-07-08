@@ -13,19 +13,11 @@ class CountersViewController: UIViewController, UIPageViewControllerDataSource {
     var pageViewController : UIPageViewController!
     
     var screenTitles = ["", "", ""]
-    var images1 = ["", "", ""]
-    var images2 = ["", "", ""]
-    var images3 = ["", "", ""]
-    var images4 = ["", "", ""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.screenTitles = ["Weak Against", "Strong Against", "Strong With"]
-        self.images1 = ["tasks copy", "tasks copy", "tasks copy"]
-        self.images2 = ["tasks copy", "tasks copy", "tasks copy"]
-        self.images3 = ["tasks copy", "tasks copy", "tasks copy"]
-        self.images4 = ["tasks copy", "tasks copy", "tasks copy"]
         
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         
@@ -50,10 +42,7 @@ class CountersViewController: UIViewController, UIPageViewControllerDataSource {
         let vc: ContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController") as! ContentViewController
         
         vc.titleText = screenTitles[index] as String
-        vc.pageHero1 = self.images1[index] as String
-        vc.pageHero2 = self.images2[index] as String
-        vc.pageHero3 = self.images3[index] as String
-        vc.pageHero4 = self.images4[index] as String
+        vc.myHero = self.title! + " " + (screenTitles[index] as String)
         vc.pageIndex = index
         
         return vc
