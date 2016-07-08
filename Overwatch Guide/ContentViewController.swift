@@ -25,6 +25,81 @@ class ContentViewController: UIViewController {
     
     @IBAction func popBack(sender: AnyObject) {
         
+        let destination = self.navigationController?.viewControllers[(self.navigationController?.viewControllers.count)!-2]
+        
+        // Offense
+        if sender.imageForState(.Normal) == HeroIconHelper.Genji {
+            destination!.title = "Genji"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.McCree {
+            destination!.title = "McCree"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Pharah {
+            destination!.title = "Pharah"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Reaper {
+            destination!.title = "Reaper"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Soldier76 {
+            destination!.title = "Soldier 76"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Tracer {
+            destination!.title = "Tracer"
+        }
+            
+            // Defense
+        else if sender.imageForState(.Normal) == HeroIconHelper.Bastion {
+            destination!.title = "Bastion"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Hanzo {
+            destination!.title = "Hanzo"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Junkrat {
+            destination!.title = "Junkrat"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Mei {
+            destination!.title = "Mei"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Torbjorn {
+            destination!.title = "Torbjorn"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Widowmaker {
+            destination!.title = "Widowmaker"
+        }
+            
+            // Tank
+        else if sender.imageForState(.Normal) == HeroIconHelper.DVA {
+            destination!.title = "D.Va"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Reinhardt {
+            destination!.title = "Reinhardt"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Roadhog {
+            destination!.title = "Roadhog"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Winston{
+            destination!.title = "Winston"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Zarya {
+            destination!.title = "Zarya"
+        }
+            
+            // Support
+        else if sender.imageForState(.Normal) == HeroIconHelper.Lucio {
+            destination!.title = "Lucio"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Mercy {
+            destination!.title = "Mercy"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Symmetra {
+            destination!.title = "Symmetra"
+        }
+        else if sender.imageForState(.Normal) == HeroIconHelper.Zenyatta {
+            destination!.title = "Zenyatta"
+        }
+        
+        destination?.viewDidLoad()
+        
         self.navigationController?.popViewControllerAnimated(true)
     }
     
