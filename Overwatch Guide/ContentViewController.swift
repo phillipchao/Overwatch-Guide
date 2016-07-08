@@ -23,12 +23,23 @@ class ContentViewController: UIViewController {
     var titleText: String!
     var myHero: String!
     
+    @IBAction func popBack(sender: AnyObject) {
+        
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.titleLabel.text = self.titleText
         
         let imgList = CountersHelper.returnIcons(self.myHero)
+        
+        hero1.setImage(imgList![0], forState: .Normal)
+        hero2.setImage(imgList![1], forState: .Normal)
+        hero3.setImage(imgList![2], forState: .Normal)
+        hero4.setImage(imgList![3], forState: .Normal)
         
         hero1.layer.cornerRadius = hero1.frame.size.width / 2
         hero1.clipsToBounds = true
@@ -39,10 +50,14 @@ class ContentViewController: UIViewController {
         hero4.layer.cornerRadius = hero4.frame.size.width / 2
         hero4.clipsToBounds = true
         
-        hero1.setImage(imgList![0], forState: .Normal)
-        hero2.setImage(imgList![1], forState: .Normal)
-        hero3.setImage(imgList![2], forState: .Normal)
-        hero4.setImage(imgList![3], forState: .Normal)
+        hero1.layer.borderColor = UIColor.orangeColor().CGColor
+        hero1.layer.borderWidth = 2.0
+        hero2.layer.borderColor = UIColor.orangeColor().CGColor
+        hero2.layer.borderWidth = 2.0
+        hero3.layer.borderColor = UIColor.orangeColor().CGColor
+        hero3.layer.borderWidth = 2.0
+        hero4.layer.borderColor = UIColor.orangeColor().CGColor
+        hero4.layer.borderWidth = 2.0
     }
     
 }
