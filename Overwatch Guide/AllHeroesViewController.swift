@@ -118,6 +118,9 @@ class AllHeroesViewController: UIViewController {
             buttonArray[i].setImage(HeroIconHelper.offenseArray[i], forState: .Normal)
             buttonArray[i].layer.cornerRadius = buttonArray[i].frame.size.width / 2
             buttonArray[i].clipsToBounds = true
+            
+            buttonArray[i].layer.borderColor = UIColor.orangeColor().CGColor
+            buttonArray[i].layer.borderWidth = 2.0
         }
     }
     
@@ -132,6 +135,9 @@ class AllHeroesViewController: UIViewController {
             buttonArray[i].setImage(HeroIconHelper.defenseArray[i], forState: .Normal)
             buttonArray[i].layer.cornerRadius = buttonArray[i].frame.size.width / 2
             buttonArray[i].clipsToBounds = true
+            
+            buttonArray[i].layer.borderColor = UIColor.orangeColor().CGColor
+            buttonArray[i].layer.borderWidth = 2.0
         }
     }
     
@@ -150,6 +156,9 @@ class AllHeroesViewController: UIViewController {
             buttonArray[i].setImage(HeroIconHelper.tankArray[i], forState: .Normal)
             buttonArray[i].layer.cornerRadius = buttonArray[i].frame.size.width / 2
             buttonArray[i].clipsToBounds = true
+            
+            buttonArray[i].layer.borderColor = UIColor.orangeColor().CGColor
+            buttonArray[i].layer.borderWidth = 2.0
         }
     }
     
@@ -170,6 +179,9 @@ class AllHeroesViewController: UIViewController {
             buttonArray[i].setImage(HeroIconHelper.supportArray[i], forState: .Normal)
             buttonArray[i].layer.cornerRadius = buttonArray[i].frame.size.width / 2
             buttonArray[i].clipsToBounds = true
+            
+            buttonArray[i].layer.borderColor = UIColor.orangeColor().CGColor
+            buttonArray[i].layer.borderWidth = 2.0
         }
     }
     

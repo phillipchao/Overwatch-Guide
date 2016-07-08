@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [
             NSFontAttributeName: UIFont(name: "Avenir Book", size: 20)!
         ]
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         
         // Set up page view controllers
         let pageController = UIPageControl.appearance()

@@ -29,6 +29,8 @@ class HeroInfoViewController: UIViewController {
     
     @IBOutlet weak var upArrowButton: UIButton!
     
+    var currentHero = ""
+    
     // Extra stuff
     
     func imageWithColor(colour: UIColor) -> UIImage {
@@ -53,7 +55,8 @@ class HeroInfoViewController: UIViewController {
         
         let destination = segue.destinationViewController as! CountersViewController
         
-        destination.title = self.title
+        
+        destination.title = self.currentHero
         print(destination.title)
     }
     
@@ -179,11 +182,16 @@ class HeroInfoViewController: UIViewController {
         profilePicture.layer.cornerRadius = profilePicture.frame.size.width / 2
         profilePicture.clipsToBounds = true
         
+        profilePicture.layer.borderColor = UIColor.whiteColor().CGColor
+        profilePicture.layer.borderWidth = 2.0
+        
         // Make Navigation Bar Transparent
-        /*self.title = ""
+        currentHero = self.title ?? ""
+        self.title = ""
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
-        self.navigationController!.navigationBar.translucent = true*/
+        self.navigationController!.navigationBar.translucent = true
+        self.navigationController?.navigationBar.tintColor = UIColor.orangeColor()
     }
     
     // Extra Stuff

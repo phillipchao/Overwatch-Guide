@@ -462,7 +462,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mgu-CM-1T6">
-                                <rect key="frame" x="190" y="180" width="220" height="90"/>
+                                <rect key="frame" x="190" y="170" width="220" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="6pI-7x-lk0">
                                         <rect key="frame" x="0.0" y="0.0" width="220" height="40"/>
@@ -519,32 +519,37 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y77-Um-nvX">
-                                <rect key="frame" x="277" y="290" width="47" height="24"/>
+                                <rect key="frame" x="277" y="280" width="47" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-L6-SIV">
-                                <rect key="frame" x="20" y="314" width="560" height="236"/>
+                                <rect key="frame" x="20" y="304" width="560" height="216"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqZ-UO-yDe">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <color key="backgroundColor" red="0.26530448717948718" green="0.26530448717948718" blue="0.26530448717948718" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="530" width="600" height="60"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.52549019607843139" blue="0.15686274509803921" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="jtx-T7-ZQE"/>
+                                    <constraint firstAttribute="height" constant="60" id="jtx-T7-ZQE"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
-                                <state key="normal" image="uparrow"/>
+                                <state key="normal" title="MORE INFO">
+                                    <color key="titleColor" red="1" green="0.5958264210900488" blue="0.27346594542805069" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.57412230895454341" blue="0.24047518312349514" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="ButtonAction:" destination="PZC-mD-L05" eventType="touchUpInside" id="jbG-LY-NKK"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reinhardt_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Mbt-Fp-mfu">
-                                <rect key="frame" x="260" y="90" width="80" height="80"/>
+                                <rect key="frame" x="260" y="80" width="80" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="XLV-8N-gAt"/>
@@ -561,7 +566,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.92549019607843142" green="0.54117647058823526" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="SqZ-UO-yDe" firstAttribute="top" secondItem="bjw-L6-SIV" secondAttribute="bottom" constant="6" id="48u-le-vdy"/>
+                            <constraint firstItem="SqZ-UO-yDe" firstAttribute="top" secondItem="bjw-L6-SIV" secondAttribute="bottom" constant="10" id="48u-le-vdy"/>
                             <constraint firstItem="Mgu-CM-1T6" firstAttribute="top" secondItem="Mbt-Fp-mfu" secondAttribute="bottom" constant="10" id="5Jt-q2-XUE"/>
                             <constraint firstItem="bjw-L6-SIV" firstAttribute="leading" secondItem="fDA-8Z-vBg" secondAttribute="leading" constant="20" id="G8k-hv-q4O"/>
                             <constraint firstAttribute="trailing" secondItem="SqZ-UO-yDe" secondAttribute="trailing" id="Grf-3q-3TK"/>
@@ -572,12 +577,12 @@
                             <constraint firstItem="bjw-L6-SIV" firstAttribute="top" secondItem="Y77-Um-nvX" secondAttribute="bottom" id="VV1-eK-0LH"/>
                             <constraint firstItem="X5e-fs-GAF" firstAttribute="top" secondItem="o1J-7Z-178" secondAttribute="bottom" constant="-80" id="WOh-Mf-bxU"/>
                             <constraint firstItem="Mbt-Fp-mfu" firstAttribute="centerX" secondItem="X5e-fs-GAF" secondAttribute="centerX" id="ak8-xj-Z1j"/>
-                            <constraint firstItem="Mbt-Fp-mfu" firstAttribute="top" secondItem="X5e-fs-GAF" secondAttribute="bottom" constant="-40" id="cE7-Z8-XNt"/>
+                            <constraint firstItem="Mbt-Fp-mfu" firstAttribute="top" secondItem="X5e-fs-GAF" secondAttribute="bottom" constant="-50" id="cE7-Z8-XNt"/>
                             <constraint firstItem="X5e-fs-GAF" firstAttribute="top" secondItem="6Zm-8y-f1V" secondAttribute="bottom" constant="-74" id="eVg-Uu-Bbu"/>
                             <constraint firstItem="Y77-Um-nvX" firstAttribute="top" secondItem="Mgu-CM-1T6" secondAttribute="bottom" constant="20" id="iPT-WR-xX9"/>
                             <constraint firstItem="o1J-7Z-178" firstAttribute="centerX" secondItem="fDA-8Z-vBg" secondAttribute="centerX" id="mXb-HO-OTG"/>
                             <constraint firstItem="Mgu-CM-1T6" firstAttribute="centerX" secondItem="Mbt-Fp-mfu" secondAttribute="centerX" id="qak-CP-Q2D"/>
-                            <constraint firstItem="2M6-ov-Oot" firstAttribute="top" secondItem="SqZ-UO-yDe" secondAttribute="bottom" id="wqi-w2-HKi"/>
+                            <constraint firstItem="2M6-ov-Oot" firstAttribute="top" secondItem="SqZ-UO-yDe" secondAttribute="bottom" constant="10" id="wqi-w2-HKi"/>
                             <constraint firstItem="SqZ-UO-yDe" firstAttribute="leading" secondItem="fDA-8Z-vBg" secondAttribute="leading" id="z7p-us-3zY"/>
                         </constraints>
                     </view>
@@ -911,7 +916,6 @@
         <image name="tut2" width="410" height="410"/>
         <image name="tut31" width="579" height="399"/>
         <image name="tut32" width="197" height="197"/>
-        <image name="uparrow" width="54" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="FLd-zn-ij3"/>
