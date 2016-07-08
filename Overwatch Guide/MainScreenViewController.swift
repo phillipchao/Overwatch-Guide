@@ -34,6 +34,11 @@ class MainScreenViewController: UIViewController {
         performSegueWithIdentifier("allHeroesSegue", sender: sender)
     }
     
+    // More Buttons From Titles
+    @IBAction func titleMoreButtonsAction(sender: AnyObject) {
+        
+    }
+    
     // Hero Button Segue
     @IBAction func heroButtonsAction(sender: AnyObject) {
         performSegueWithIdentifier("heroInfoSegue", sender: sender)

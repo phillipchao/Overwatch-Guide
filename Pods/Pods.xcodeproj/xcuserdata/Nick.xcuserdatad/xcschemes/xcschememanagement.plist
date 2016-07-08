@@ -9,22 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Bolts.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Bond.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>FBSDKCoreKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>FBSDKLoginKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,27 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0EB19C1377A747F81110D44E2D5FCF78</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>11A09A967C036AE6CFECDFEA8325FE93</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43546B50535839AC4AB5526BC9A8582A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>52D82BFDD1E808D9CB257431922C1EE4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6EDC37F3FA92533C6AC3562458AA91F1</key>
+		<key>67E708858FB45F7D77C78A72740CB82A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F11C6344EA6D48E39112794A48A3077</key>
+		<key>D565C88E6B99011F92D8D2E73CCC3725</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,9 +7,9 @@ target ‘Overwatch Guide’ do
 
   # Pods for Terno
   pod 'Bond', '4.0.0'
-  pod 'Firebase'
-  pod 'FirebaseUI', '~> 0.4'
-  pod 'Firebase/Storage'
+  # pod 'Firebase'
+  # pod 'FirebaseUI', '~> 0.4'
+  # pod 'Firebase/Storage'
   pod 'Alamofire', '~> 3.4'
   pod 'SwiftyJSON'
 

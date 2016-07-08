@@ -25,7 +25,9 @@ class ContentViewController: UIViewController {
     
     @IBAction func popBack(sender: AnyObject) {
         
-        let destination = self.navigationController?.viewControllers[(self.navigationController?.viewControllers.count)!-2]
+        
+        
+        /*let destination = self.navigationController?.viewControllers[(self.navigationController?.viewControllers.count)!-2]
         
         // Offense
         if sender.imageForState(.Normal) == HeroIconHelper.Genji {
@@ -100,7 +102,7 @@ class ContentViewController: UIViewController {
         
         destination?.viewDidLoad()
         
-        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController?.popViewControllerAnimated(true)*/
     }
     
     
