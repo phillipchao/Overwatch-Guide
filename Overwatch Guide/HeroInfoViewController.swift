@@ -45,6 +45,18 @@ class HeroInfoViewController: UIViewController {
         return image
     }
     
+    @IBAction func ButtonAction(sender: AnyObject) {
+        performSegueWithIdentifier("CountersSegue", sender: sender)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let destination = segue.destinationViewController as! CountersViewController
+        
+        destination.title = self.title
+        print(destination.title)
+    }
+    
     // Main Stuff
     
     override func viewDidLoad() {
@@ -168,12 +180,10 @@ class HeroInfoViewController: UIViewController {
         profilePicture.clipsToBounds = true
         
         // Make Navigation Bar Transparent
-        self.title = ""
+        /*self.title = ""
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
-        self.navigationController!.navigationBar.translucent = true
-        
-        //self.navigationController!.navigationBar.topItem!.title = "Back"
+        self.navigationController!.navigationBar.translucent = true*/
     }
     
     // Extra Stuff

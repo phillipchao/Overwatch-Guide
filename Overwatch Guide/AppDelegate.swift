@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -22,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSFontAttributeName: UIFont(name: "Avenir Book", size: 20)!
         ]
         
+<<<<<<< HEAD
         // Add a UIPageControl to a UIPageViewController (the dots of the screen)
         
         var pageController = UIPageControl.appearance()
@@ -30,6 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pageController.backgroundColor = UIColor.whiteColor()
         
         
+=======
+        // Set up page view controllers
+        let pageController = UIPageControl.appearance()
+        pageController.pageIndicatorTintColor = UIColor.lightGrayColor()
+        pageController.currentPageIndicatorTintColor = UIColor(red: 236/255, green: 138/255, blue: 40/255, alpha: 1.0)
+        pageController.backgroundColor = UIColor.whiteColor()
+        
+>>>>>>> nick-swift-branch
         return true
     }
 
