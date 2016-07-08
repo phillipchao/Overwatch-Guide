@@ -23,10 +23,10 @@ class CountersViewController: UIViewController, UIPageViewControllerDataSource {
         
         self.pageViewController.dataSource = self
         
-        let startVC = self.viewControllerAtIndex(0) as! ContentViewController
+        let startVC = self.viewControllerAtIndex(0) 
         let viewControllers = NSArray(object: startVC)
         
-        self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .Forward, animated: true, completion: nil)
+        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .Forward, animated: true, completion: nil)
         
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)

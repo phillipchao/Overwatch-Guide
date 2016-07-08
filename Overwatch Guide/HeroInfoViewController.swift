@@ -17,17 +17,17 @@ class HeroInfoViewController: UIViewController {
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var name: UILabel!
     
-    @IBOutlet weak var skill1: UIImageView!
-    @IBOutlet weak var skill2: UIImageView!
-    @IBOutlet weak var skill3: UIImageView!
-    @IBOutlet weak var skill4: UIImageView!
-    @IBOutlet weak var skill5: UIImageView!
-    @IBOutlet weak var skill6: UIImageView!
-    
     @IBOutlet weak var guideLabel: UILabel!
     @IBOutlet weak var guideInformationTextView: UITextView!
     
     @IBOutlet weak var upArrowButton: UIButton!
+    
+    @IBAction func skillPopA(sender: AnyObject) {
+        // Show the pop-up when the button is clicked
+        let popTheSkill = UIAlertController(title: "Abilities", message:"Coming Soon", preferredStyle: UIAlertControllerStyle.Alert)
+        popTheSkill.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(popTheSkill, animated: true, completion: nil)
+    }
     
     var currentHero = ""
     
@@ -64,6 +64,12 @@ class HeroInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let temp = self.navigationController?.viewControllers[(self.navigationController?.viewControllers.count)!-2]
+        
+        if temp?.title == "Offense" || temp?.title == "Defense" || temp?.title == "Tank" || temp?.title == "Support" {
+            self.navigationController?.viewControllers.removeAtIndex((self.navigationController?.viewControllers.count)! - 2)
+        }
         
         // Offense
         if self.title == "Genji" {

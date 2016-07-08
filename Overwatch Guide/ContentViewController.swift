@@ -133,6 +133,14 @@ class ContentViewController: UIViewController {
         hero3.layer.borderWidth = 2.0
         hero4.layer.borderColor = UIColor.orangeColor().CGColor
         hero4.layer.borderWidth = 2.0
+        
+        if self.myHero.hasSuffix("With") {
+            self.titleLabel.text = "Coming Soon"
+            hero1.alpha = 0.1
+            hero2.alpha = 0.1
+            hero3.alpha = 0.1
+            hero4.alpha = 0.1
+        }
     }
     
 }
