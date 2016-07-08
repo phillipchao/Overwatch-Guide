@@ -264,6 +264,7 @@
 				01AAC5D11D2DE3C40007CAA9 /* AllHeroesViewController.swift in Sources */,
 				01FBDB141D2C952200A4E751 /* HeroInfoViewController.swift in Sources */,
 				FE861C851D2E49640012CC75 /* ContentViewController.swift in Sources */,
+				01B8E36E1D2ECB7D00ABAD08 /* HeroIconHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
