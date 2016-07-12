@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		016B89E01D3040E500722D89 /* HeroSkillDescriptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B89DF1D3040E500722D89 /* HeroSkillDescriptionHelper.swift */; };
 		01AAC5C91D2D99160007CAA9 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AAC5C81D2D99160007CAA9 /* JSONHelper.swift */; };
 		01AAC5CF1D2DE3560007CAA9 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AAC5CE1D2DE3560007CAA9 /* MainScreenViewController.swift */; };
 		01AAC5D11D2DE3C40007CAA9 /* AllHeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AAC5D01D2DE3C40007CAA9 /* AllHeroesViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		016B89DF1D3040E500722D89 /* HeroSkillDescriptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroSkillDescriptionHelper.swift; sourceTree = "<group>"; };
 		01AAC5C81D2D99160007CAA9 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		01AAC5CE1D2DE3560007CAA9 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		01AAC5D01D2DE3C40007CAA9 /* AllHeroesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllHeroesViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				01B8E36D1D2ECB7D00ABAD08 /* HeroIconHelper.swift */,
 				01C10FFB1D2ED5A00016B418 /* HeroInfoHelper.swift */,
 				01DF575C1D2F00470078B524 /* CountersHelper.swift */,
+				016B89DF1D3040E500722D89 /* HeroSkillDescriptionHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				FEC51A691D2F629700F75BC3 /* TutorialContentViewController.swift in Sources */,
 				01FBDB141D2C952200A4E751 /* HeroInfoViewController.swift in Sources */,
 				01B8E36E1D2ECB7D00ABAD08 /* HeroIconHelper.swift in Sources */,
+				016B89E01D3040E500722D89 /* HeroSkillDescriptionHelper.swift in Sources */,
 				01DF575B1D2EFA2E0078B524 /* CountersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

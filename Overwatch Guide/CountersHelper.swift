@@ -12,50 +12,50 @@ import UIKit
 class CountersHelper {
     
     // Offense
-    static let GenjiTuple = (weak: [HeroIconHelper.Mei, HeroIconHelper.Winston, HeroIconHelper.Zarya, HeroIconHelper.Roadhog], strong: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let GenjiTuple = (weak: [HeroIconHelper.Mei, HeroIconHelper.Winston, HeroIconHelper.Zarya, HeroIconHelper.Roadhog], strong: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo], with: [HeroIconHelper.Zarya, HeroIconHelper.Lucio, HeroIconHelper.Mei, HeroIconHelper.Pharah])
     
-    static let McCreeTuple = (weak: [HeroIconHelper.Widowmaker, HeroIconHelper.Pharah, HeroIconHelper.Genji, HeroIconHelper.Bastion], strong: [HeroIconHelper.Reaper, HeroIconHelper.Tracer, HeroIconHelper.Mercy, HeroIconHelper.Lucio], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let McCreeTuple = (weak: [HeroIconHelper.Widowmaker, HeroIconHelper.Pharah, HeroIconHelper.Genji, HeroIconHelper.Bastion], strong: [HeroIconHelper.Reaper, HeroIconHelper.Tracer, HeroIconHelper.Mercy, HeroIconHelper.Lucio], with: [HeroIconHelper.Mei, HeroIconHelper.Reinhardt, HeroIconHelper.Winston, HeroIconHelper.DVA])
     
-    static let PharahTuple = (weak: [HeroIconHelper.Soldier76, HeroIconHelper.Widowmaker, HeroIconHelper.Roadhog, HeroIconHelper.Hanzo], strong: [HeroIconHelper.Junkrat, HeroIconHelper.Reaper, HeroIconHelper.Mei, HeroIconHelper.Symmetra], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let PharahTuple = (weak: [HeroIconHelper.Soldier76, HeroIconHelper.Widowmaker, HeroIconHelper.Roadhog, HeroIconHelper.Hanzo], strong: [HeroIconHelper.Junkrat, HeroIconHelper.Reaper, HeroIconHelper.Mei, HeroIconHelper.Symmetra], with: [HeroIconHelper.Zarya, HeroIconHelper.Mercy, HeroIconHelper.Reinhardt, HeroIconHelper.Mei])
     
-    static let ReaperTuple = (weak: [HeroIconHelper.McCree, HeroIconHelper.Pharah, HeroIconHelper.Mei, HeroIconHelper.Genji], strong: [HeroIconHelper.Mercy, HeroIconHelper.Winston, HeroIconHelper.Zenyatta, HeroIconHelper.Roadhog], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let ReaperTuple = (weak: [HeroIconHelper.McCree, HeroIconHelper.Pharah, HeroIconHelper.Mei, HeroIconHelper.Genji], strong: [HeroIconHelper.Mercy, HeroIconHelper.Winston, HeroIconHelper.Zenyatta, HeroIconHelper.Roadhog], with: [HeroIconHelper.Lucio, HeroIconHelper.Mercy, HeroIconHelper.Zarya, HeroIconHelper.Mei])
     
-    static let Soldier76Tuple = (weak: [HeroIconHelper.Genji, HeroIconHelper.Reinhardt, HeroIconHelper.Roadhog, HeroIconHelper.McCree], strong: [HeroIconHelper.Mercy, HeroIconHelper.Pharah, HeroIconHelper.Zenyatta, HeroIconHelper.Lucio], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let Soldier76Tuple = (weak: [HeroIconHelper.Genji, HeroIconHelper.Reinhardt, HeroIconHelper.Roadhog, HeroIconHelper.McCree], strong: [HeroIconHelper.Mercy, HeroIconHelper.Pharah, HeroIconHelper.Zenyatta, HeroIconHelper.Lucio], with: [HeroIconHelper.Reinhardt, HeroIconHelper.Mercy, HeroIconHelper.Lucio, HeroIconHelper.Roadhog])
     
-    static let TracerTuple = (weak: [HeroIconHelper.McCree, HeroIconHelper.Roadhog, HeroIconHelper.Winston, HeroIconHelper.Pharah], strong: [HeroIconHelper.Junkrat, HeroIconHelper.Reaper, HeroIconHelper.Mei, HeroIconHelper.Symmetra], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let TracerTuple = (weak: [HeroIconHelper.McCree, HeroIconHelper.Roadhog, HeroIconHelper.Winston, HeroIconHelper.Pharah], strong: [HeroIconHelper.Junkrat, HeroIconHelper.Reaper, HeroIconHelper.Mei, HeroIconHelper.Symmetra], with: [HeroIconHelper.Lucio, HeroIconHelper.Zarya, HeroIconHelper.Winston, HeroIconHelper.Roadhog])
     
     // Defense
-    static let BastionTuple = (weak: [HeroIconHelper.Genji, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo, HeroIconHelper.Junkrat], strong: [HeroIconHelper.Winston, HeroIconHelper.Mercy, HeroIconHelper.Reinhardt, HeroIconHelper.Lucio], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let BastionTuple = (weak: [HeroIconHelper.Genji, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo, HeroIconHelper.Junkrat], strong: [HeroIconHelper.Winston, HeroIconHelper.Mercy, HeroIconHelper.Reinhardt, HeroIconHelper.Lucio], with: [HeroIconHelper.Reinhardt, HeroIconHelper.Mercy, HeroIconHelper.Mei, HeroIconHelper.Hanzo])
     
-    static let HanzoTuple = (weak: [HeroIconHelper.Genji, HeroIconHelper.Tracer, HeroIconHelper.Winston, HeroIconHelper.Widowmaker], strong: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Zenyatta, HeroIconHelper.Torbjorn], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let HanzoTuple = (weak: [HeroIconHelper.Genji, HeroIconHelper.Tracer, HeroIconHelper.Winston, HeroIconHelper.Widowmaker], strong: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Zenyatta, HeroIconHelper.Torbjorn], with: [HeroIconHelper.Bastion, HeroIconHelper.Mei, HeroIconHelper.Reinhardt, HeroIconHelper.Symmetra])
     
-    static let JunkratTuple = (weak: [HeroIconHelper.Pharah, HeroIconHelper.Widowmaker, HeroIconHelper.Soldier76, HeroIconHelper.Hanzo], strong: [HeroIconHelper.Bastion, HeroIconHelper.Torbjorn, HeroIconHelper.Mercy, HeroIconHelper.Symmetra], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let JunkratTuple = (weak: [HeroIconHelper.Pharah, HeroIconHelper.Widowmaker, HeroIconHelper.Soldier76, HeroIconHelper.Hanzo], strong: [HeroIconHelper.Bastion, HeroIconHelper.Torbjorn, HeroIconHelper.Mercy, HeroIconHelper.Symmetra], with: [HeroIconHelper.Reinhardt, HeroIconHelper.Mercy, HeroIconHelper.Zarya, HeroIconHelper.Mei])
     
-    static let MeiTuple = (weak: [HeroIconHelper.Pharah, HeroIconHelper.Widowmaker, HeroIconHelper.McCree, HeroIconHelper.Junkrat], strong: [HeroIconHelper.Genji, HeroIconHelper.DVA, HeroIconHelper.Lucio, HeroIconHelper.Reinhardt], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let MeiTuple = (weak: [HeroIconHelper.Pharah, HeroIconHelper.Widowmaker, HeroIconHelper.McCree, HeroIconHelper.Junkrat], strong: [HeroIconHelper.Genji, HeroIconHelper.DVA, HeroIconHelper.Lucio, HeroIconHelper.Reinhardt], with: [HeroIconHelper.Lucio, HeroIconHelper.Bastion, HeroIconHelper.Soldier76, HeroIconHelper.Torbjorn])
     
-    static let TorbjornTuple = (weak: [HeroIconHelper.Widowmaker, HeroIconHelper.Junkrat, HeroIconHelper.Pharah, HeroIconHelper.Hanzo], strong: [HeroIconHelper.Mercy, HeroIconHelper.Lucio, HeroIconHelper.Symmetra, HeroIconHelper.Zenyatta], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let TorbjornTuple = (weak: [HeroIconHelper.Widowmaker, HeroIconHelper.Junkrat, HeroIconHelper.Pharah, HeroIconHelper.Hanzo], strong: [HeroIconHelper.Mercy, HeroIconHelper.Lucio, HeroIconHelper.Symmetra, HeroIconHelper.Zenyatta], with: [HeroIconHelper.Reinhardt, HeroIconHelper.Mei, HeroIconHelper.Bastion, HeroIconHelper.Hanzo])
     
-    static let WidowmakerTuple = (weak: [HeroIconHelper.Genji, HeroIconHelper.DVA, HeroIconHelper.Winston, HeroIconHelper.Tracer], strong: [HeroIconHelper.Bastion, HeroIconHelper.Zenyatta, HeroIconHelper.Torbjorn, HeroIconHelper.Mercy], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let WidowmakerTuple = (weak: [HeroIconHelper.Genji, HeroIconHelper.DVA, HeroIconHelper.Winston, HeroIconHelper.Tracer], strong: [HeroIconHelper.Bastion, HeroIconHelper.Zenyatta, HeroIconHelper.Torbjorn, HeroIconHelper.Mercy], with: [HeroIconHelper.Winston, HeroIconHelper.Reinhardt, HeroIconHelper.DVA, HeroIconHelper.Bastion])
     
     // Tank
-    static let DVATuple = (weak: [HeroIconHelper.Mei, HeroIconHelper.Junkrat, HeroIconHelper.Reaper, HeroIconHelper.McCree], strong: [HeroIconHelper.Widowmaker, HeroIconHelper.Mercy, HeroIconHelper.Torbjorn, HeroIconHelper.Hanzo], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let DVATuple = (weak: [HeroIconHelper.Mei, HeroIconHelper.Junkrat, HeroIconHelper.Reaper, HeroIconHelper.McCree], strong: [HeroIconHelper.Widowmaker, HeroIconHelper.Mercy, HeroIconHelper.Torbjorn, HeroIconHelper.Hanzo], with: [HeroIconHelper.Reaper, HeroIconHelper.Pharah, HeroIconHelper.Mercy, HeroIconHelper.Soldier76])
     
-    static let ReinhardtTuple = (weak: [HeroIconHelper.Mei, HeroIconHelper.Bastion, HeroIconHelper.Pharah, HeroIconHelper.Junkrat], strong: [HeroIconHelper.Mercy, HeroIconHelper.Soldier76, HeroIconHelper.Torbjorn, HeroIconHelper.Lucio], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let ReinhardtTuple = (weak: [HeroIconHelper.Mei, HeroIconHelper.Bastion, HeroIconHelper.Pharah, HeroIconHelper.Junkrat], strong: [HeroIconHelper.Mercy, HeroIconHelper.Soldier76, HeroIconHelper.Torbjorn, HeroIconHelper.Lucio], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Soldier76, HeroIconHelper.Junkrat])
     
-    static let RoadhogTuple = (weak: [HeroIconHelper.Reaper, HeroIconHelper.Mei, HeroIconHelper.DVA, HeroIconHelper.Zarya], strong: [HeroIconHelper.Mercy, HeroIconHelper.Symmetra, HeroIconHelper.Winston, HeroIconHelper.Lucio], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let RoadhogTuple = (weak: [HeroIconHelper.Reaper, HeroIconHelper.Mei, HeroIconHelper.DVA, HeroIconHelper.Zarya], strong: [HeroIconHelper.Mercy, HeroIconHelper.Symmetra, HeroIconHelper.Winston, HeroIconHelper.Lucio], with: [HeroIconHelper.Mei, HeroIconHelper.Mercy, HeroIconHelper.Lucio, HeroIconHelper.Soldier76])
     
-    static let WinstonTuple = (weak: [HeroIconHelper.Bastion, HeroIconHelper.Reaper, HeroIconHelper.Roadhog, HeroIconHelper.McCree], strong: [HeroIconHelper.Genji, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Symmetra], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let WinstonTuple = (weak: [HeroIconHelper.Bastion, HeroIconHelper.Reaper, HeroIconHelper.Roadhog, HeroIconHelper.McCree], strong: [HeroIconHelper.Genji, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Symmetra], with: [HeroIconHelper.Reaper, HeroIconHelper.Winston, HeroIconHelper.Mei, HeroIconHelper.Widowmaker])
     
-    static let ZaryaTuple = (weak: [HeroIconHelper.Pharah, HeroIconHelper.Reaper, HeroIconHelper.Bastion, HeroIconHelper.Mei], strong: [HeroIconHelper.Mercy, HeroIconHelper.Genji, HeroIconHelper.Torbjorn, HeroIconHelper.Lucio], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let ZaryaTuple = (weak: [HeroIconHelper.Pharah, HeroIconHelper.Reaper, HeroIconHelper.Bastion, HeroIconHelper.Mei], strong: [HeroIconHelper.Mercy, HeroIconHelper.Genji, HeroIconHelper.Torbjorn, HeroIconHelper.Lucio], with: [HeroIconHelper.Junkrat, HeroIconHelper.Pharah, HeroIconHelper.Genji, HeroIconHelper.Hanzo])
     
     // Support
-    static let LucioTuple = (weak: [HeroIconHelper.Mei, HeroIconHelper.McCree, HeroIconHelper.Pharah, HeroIconHelper.Soldier76], strong: [HeroIconHelper.Mercy, HeroIconHelper.Symmetra, HeroIconHelper.Zenyatta, HeroIconHelper.Torbjorn], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let LucioTuple = (weak: [HeroIconHelper.Mei, HeroIconHelper.McCree, HeroIconHelper.Pharah, HeroIconHelper.Soldier76], strong: [HeroIconHelper.Mercy, HeroIconHelper.Symmetra, HeroIconHelper.Zenyatta, HeroIconHelper.Torbjorn], with: [HeroIconHelper.Reaper, HeroIconHelper.Genji, HeroIconHelper.Mei, HeroIconHelper.Soldier76])
     
-    static let MercyTuple = (weak: [HeroIconHelper.Tracer, HeroIconHelper.Roadhog, HeroIconHelper.Genji, HeroIconHelper.Reaper], strong: [HeroIconHelper.Symmetra, HeroIconHelper.Lucio, HeroIconHelper.Torbjorn, HeroIconHelper.Junkrat], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let MercyTuple = (weak: [HeroIconHelper.Tracer, HeroIconHelper.Roadhog, HeroIconHelper.Genji, HeroIconHelper.Reaper], strong: [HeroIconHelper.Symmetra, HeroIconHelper.Lucio, HeroIconHelper.Torbjorn, HeroIconHelper.Junkrat], with: [HeroIconHelper.Soldier76, HeroIconHelper.Pharah, HeroIconHelper.Mei, HeroIconHelper.Roadhog])
     
-    static let SymmetraTuple = (weak: [HeroIconHelper.Pharah, HeroIconHelper.Roadhog, HeroIconHelper.McCree, HeroIconHelper.Junkrat], strong: [HeroIconHelper.Mercy, HeroIconHelper.Genji, HeroIconHelper.Lucio, HeroIconHelper.Reinhardt], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let SymmetraTuple = (weak: [HeroIconHelper.Pharah, HeroIconHelper.Roadhog, HeroIconHelper.McCree, HeroIconHelper.Junkrat], strong: [HeroIconHelper.Mercy, HeroIconHelper.Genji, HeroIconHelper.Lucio, HeroIconHelper.Reinhardt], with: [HeroIconHelper.Bastion, HeroIconHelper.Torbjorn, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
     
-    static let ZenyattaTuple = (weak: [HeroIconHelper.Widowmaker, HeroIconHelper.Reaper, HeroIconHelper.Tracer, HeroIconHelper.Genji], strong: [HeroIconHelper.Mercy, HeroIconHelper.Symmetra, HeroIconHelper.Lucio, HeroIconHelper.DVA], with: [HeroIconHelper.Bastion, HeroIconHelper.Mercy, HeroIconHelper.Widowmaker, HeroIconHelper.Hanzo])
+    static let ZenyattaTuple = (weak: [HeroIconHelper.Widowmaker, HeroIconHelper.Reaper, HeroIconHelper.Tracer, HeroIconHelper.Genji], strong: [HeroIconHelper.Mercy, HeroIconHelper.Symmetra, HeroIconHelper.Lucio, HeroIconHelper.DVA], with: [HeroIconHelper.Roadhog, HeroIconHelper.Junkrat, HeroIconHelper.Reaper, HeroIconHelper.Soldier76])
     
     static func returnIcons(str: String!) -> ([UIImage?]?) {
         
@@ -127,7 +127,7 @@ class CountersHelper {
             }
         }
             
-        // Defense
+            // Defense
         else if str.hasPrefix("Bastion") {
             if str.hasSuffix("Weak Against") {
                 return BastionTuple.weak
@@ -195,7 +195,7 @@ class CountersHelper {
             }
         }
             
-        // Tank
+            // Tank
         else if str.hasPrefix("D.Va") {
             if str.hasSuffix("Weak Against") {
                 return DVATuple.weak
@@ -252,7 +252,7 @@ class CountersHelper {
             }
         }
             
-        // Support
+            // Support
         else if str.hasPrefix("Lucio") {
             if str.hasSuffix("Weak Against") {
                 return LucioTuple.weak
@@ -297,7 +297,7 @@ class CountersHelper {
                 return ZenyattaTuple.with
             }
         }
-        
+            
         else {
             print("Something went wrong")
             return nil

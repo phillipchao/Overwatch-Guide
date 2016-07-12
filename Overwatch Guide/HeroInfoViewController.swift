@@ -29,6 +29,7 @@ class HeroInfoViewController: UIViewController {
         self.presentViewController(popTheSkill, animated: true, completion: nil)
     }
     
+    var skills: [UIButton] = []
     var currentHero = ""
     
     // Extra stuff
@@ -182,6 +183,16 @@ class HeroInfoViewController: UIViewController {
             name.text = HeroInfoHelper.ZenyattaTuple.name
             profilePicture.image = HeroInfoHelper.ZenyattaTuple.icon
             guideInformationTextView.text = HeroInfoHelper.ZenyattaTuple.guide
+        }
+        
+        // Set up skills
+        for i in 0...5 {
+            let str: String = self.title! + "skill" + String(i)
+            let image = UIImage(named: str)
+            
+            if let image = image {
+                skills[i].setImage(image, forState: .Normal)
+            }
         }
         
         // Set up variables

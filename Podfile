@@ -12,5 +12,6 @@ target ‘Overwatch Guide’ do
   # pod 'Firebase/Storage'
   pod 'Alamofire', '~> 3.4'
   pod 'SwiftyJSON'
+  pod ‘SCLAlertView’
 
 end
